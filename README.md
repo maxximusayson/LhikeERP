@@ -1,6 +1,7 @@
 Lhike ERP
 
-Developer: Kurt Leovy Necessario  
-           Maxximus Ayson
+Developer: 
+Kurt Leovy Necessario  
+Maxximus Ayson
 
 
