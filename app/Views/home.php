@@ -203,10 +203,15 @@
                 }
                 .card-text {
                     font-family: 'Arial';
-                    font-weight: 400; /* Normal weight */
+                    font-weight: 400; 
                     font-size: 16px;
                     color: #003559;
                 }
+                .gradient-bg {
+    background: linear-gradient(to bottom, #004A7C, #002744);
+    min-height: 100vh;
+    width: 100%;
+}
 
 
     </style>
@@ -399,6 +404,161 @@
     </div> 
   </div>
 </section>
+
+
+  <!-- Who are we/what we believe in section -->
+<section class="container-fluid" id="containerfluid2" 
+  style="background: linear-gradient(to bottom, #002744, #004A7C); padding: 150px 0;">
+  
+    <section class="custom-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Image -->
+                <div class="col-md-6 position-relative fade-up">
+                    <div class="image-container">
+                        <img src="images/homepage images/homepage2.jpeg" class="img-fluid" alt="Presentation">
+                    </div>
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="col-md-6 text-section">
+                    <!-- What We Believe In (Right-Aligned) -->
+                    <div class="section-box text-end fade-up" style="margin-bottom: 180px;">
+                        <h2 class="section-title">What we <span class="highlight-text">believe</span> in</h2>
+                        <p class="section-text">
+                            At the heart of our mission is the belief that businesses, regardless of their size, 
+                            should have access to efficient and integrated solutions.
+                        </p>
+                    </div>
+
+                    <!-- Who Are We (Left-Aligned with White Box) -->
+                    <div class="section-box white-box text-start fade-up" style="padding: 30px;">
+                        <h2 class="section-title">
+                            <span class="highlight-text">Who</span> are we?
+                        </h2>
+                        <p class="section-text">
+                            LHIKE ERP delivers tailored IT solutions to help businesses optimize their processes, 
+                            improve efficiency, and gain real-time insights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+
+<style>
+/* Increase size of section title */
+.section-title {
+    font-size: 70px; /* Increased size */
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+}
+
+/* Highlighted word size adjustment */
+.section-title .highlight-text {
+    font-size: 55px; /* Adjusted size for highlighted word */
+    background: #fff;
+    color: #003559;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* Make the text white */
+.section-text {
+    font-size: 18px;
+    font-family: Arial;
+    font-weight: 300;
+    margin-top: 10px;
+    color: #ffffff; /* Set text color to white */
+}
+
+/* Add White Border to the Image */
+.image-container img {
+    border: 5px solid #ffffff; /* White border */
+    transition: all 0.3s ease-in-out; /* Smooth transition for effects */
+}
+
+/* Hover Effect: Add Glow and Slight Zoom */
+.image-container:hover img {
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect in white */
+    transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+/* Image Container with Hover Effect */
+.image-container {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out; /* Smooth transition for effects */
+}
+
+/* Hover Effect: Glow */
+.image-container:hover .corner-decoration {
+    border-color: #00aaff; /* Change to a modern blue */
+    box-shadow: 0 0 10px #00aaff;
+}
+
+/* Alignment Fixes */
+.text-end {
+    text-align: right !important;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+/* Main Section */
+.section-container {
+    color: #fff;
+}
+
+/* Text Section */
+.text-section {
+    text-align: left;
+    padding-left: 50px;
+}
+/* Initial state: elements are transparent and moved down */
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px); /* Start lower */
+    transition: all 0.6s ease-in-out;
+}
+
+/* Final state when they are fully visible */
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0); /* Move to the original position */
+}
+
+</style>
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = document.querySelectorAll('.fade-up');
+    
+    function checkVisibility() {
+        fadeElements.forEach(function(element) {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add('visible');
+            } else {
+                element.classList.remove('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    
+    checkVisibility();
+});
+</script>
+
 
 
 </body>
