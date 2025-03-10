@@ -104,7 +104,7 @@
 
                 /* Dim the background image */
                 .dimmed-image {
-                filter: brightness(50%); /* Adjust this value to control the dim effect */
+                filter: brightness(50%); 
                 width: 100%;
                 height: auto;
                 display: block;
@@ -116,7 +116,7 @@
                 top: 0;
                 left: 0;
                 width: 100%;
-                background: #2693BE; /* Blue background */
+                background: #2693BE; 
                 color: white;
                 font-size: 1.2rem;
                 font-weight: bold;
@@ -125,33 +125,33 @@
                 z-index: 2;
                 }
 
-                /* Ensure the icon is centered */
+                
                 .overlay-icon {
                 position: absolute;
                 top: 60%;
                 left: 47%;
-                transform: translate(-50%, -50%); /* Ensures perfect centering */
-                width: 30%; /* Adjust as needed */
-                max-width: 120px; /* Adjust based on icon size */
-                z-index: 3; /* Ensure it's in front */
+                transform: translate(-50%, -50%); 
+                width: 30%; 
+                max-width: 120px; 
+                z-index: 3; 
                 }
 
-                /* Make sure the icon is fully visible */
+            
                 .overlay-icon img {
                 width: 130%;
                 height: 100%;
-                opacity: 1; /* Full brightness */
+                opacity: 1;
                 }
                 .elevated-shadow {
                 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
                 transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-                border-radius: 0; /* No rounded corners */
+                border-radius: 0; 
                 background: #fff;
                 }
 
-                /* Float effect on hover */
+                
                 .elevated-shadow:hover {
-                transform: translateY(-5px); /* Slight lift */
+                transform: translateY(-5px); 
                 box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.4);
                 }
 
@@ -162,10 +162,10 @@
                 height: auto;
                 }
 
-                /* Centered Overlay Icon (Responsive) */
+                
                 .overlay-icon {
                 position: absolute;
-                top: 55%; /* Default: Slightly lower */
+                top: 55%; 
                 left: 50%;
                 transform: translate(-50%, -50%);
                 z-index: 2;
@@ -177,30 +177,38 @@
 
                 /* Icon Size Adjustments */
                 .icon-size {
-                width: 60px; /* Default */
+                width: 60px; 
                 height: auto;
                 }
 
                 /* Responsive Adjustments */
                 @media (max-width: 768px) {
                 .overlay-icon {
-                    top: 50%; /* Adjust icon positioning for smaller screens */
+                    top: 50%; 
                 }
                 
                 .icon-size {
-                    width: 50px; /* Smaller icon for small screens */
+                    width: 50px; 
                 }
                 }
 
                 @media (max-width: 480px) {
                 .overlay-icon {
-                    top: 45%; /* Further adjustment for extra small screens */
+                    top: 45%; 
                 }
 
                 .icon-size {
-                    width: 40px; /* Even smaller icon for mobile */
+                    width: 40px; 
                 }
                 }
+                .card-text {
+                    font-family: 'Arial';
+                    font-weight: 400; /* Normal weight */
+                    font-size: 16px;
+                    color: #003559;
+                }
+
+
     </style>
 </head>
 <body>
