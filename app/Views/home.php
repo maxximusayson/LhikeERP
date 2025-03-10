@@ -412,7 +412,7 @@
 
 
   <!-- Who are we/what we believe in section -->
-<section class="container-fluid" id="containerfluid2" 
+<section class="container-fluid" id="who-are-we-section" 
   style="background: linear-gradient(to bottom, #002744, #004A7C); padding: 150px 0;">
   
     <section class="custom-section">
@@ -451,6 +451,7 @@
         </div>
     </section>
 </section>
+
 
 <style>
 .section-title {
@@ -542,8 +543,41 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-<section class="container-fluid" id="containerfluid2" 
-  style="background: linear-gradient(to bottom, #004A7C, #002744); padding: 150px 0;"></section>
+
+  <section class="container-fluid" id="containerfluid2" 
+  style="background: linear-gradient(to bottom, #004A7C, #002744); padding: 150px 0;">
+  
+    <section class="custom-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Image -->
+                <div class="col-md-6 position-relative fade-up">
+                    <div class="image-container">
+                        <img src="images/homepage images/homepage3.png" class="img-fluid" alt="Presentation">
+                    </div>
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="col-md-6 text-section">
+                    <!-- What We Believe In (Right-Aligned) -->
+                    <div class="section-box text-end fade-up" style="margin-bottom: 180px;">
+                    <h2 class="section-title">Our <span class="highlight-text">Mission</span></h2>
+
+                        <p class="section-text">
+                        Our mission is to empower businesses through innovative and reliable IT solutions.
+                        We are committed to providing exceptional service and support, tailored to the unique needs of each client. 
+                        As our goal is to enhance operational efficiency, foster growth, and drive success by leveraging the latest technologies
+                        and best practices in the industry. We strive to build long-lasting partnerships with our clients, helping them navigate 
+                        the complexities of the digital landscape with confidence and ease.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+  
+        
 
 
   

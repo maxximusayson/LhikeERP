@@ -10,8 +10,11 @@
     <style>
         /* Navbar Styling */
         .navbar {
-            background-color: #073b5a; /* Dark Blue */
+            background-color: #003559; /* Dark Blue */
             padding: 12px 0;
+            position: sticky; /* Make the navbar sticky */
+            top: 0; /* Stick to the top */
+            z-index: 1000; /* Ensure it stays above other content */
         }
 
         .navbar-brand img {
@@ -116,8 +119,9 @@
                     <a class="nav-link <?= (uri_string() == '') ? 'active' : '' ?>" href="<?= base_url('/home') ?>">HOME</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == 'about') ? 'active' : '' ?>" href="<?= base_url('about') ?>">ABOUT</a>
+                    <a class="nav-link" href="#who-are-we-section">ABOUT</a>
                 </li>
+
                 <li class="nav-item">
                     <a class="nav-link <?= (uri_string() == 'documentation') ? 'active' : '' ?>" href="<?= base_url('documentation') ?>">DOCUMENTATION</a>
                 </li>
