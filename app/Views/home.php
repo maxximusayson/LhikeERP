@@ -845,26 +845,181 @@ body {
 
 </script>
 
-<!-- footer -->
-
-<section class="container-fluid" id="containerfluid2" 
-  style="background: linear-gradient(to bottom, #002744, #004A7C); padding: 110px 0;">
+<footer class="footer">
   
-    <section class="custom-section">
-        <div class="container">
-            <div class="row align-items-center">
-                
+    <div class="container">
+        <div class="footer-content">
+        <div class="footer-divider"></div>
 
-                <!-- Right Image (now second) -->
-                <div class="col-md-6 d-flex justify-content-center align-items-center fade-up">
-                    <div class="image-container" style="border: 10px solid #ffffff; padding: 5px;">
-                        <img src="images/homepage images/homepage4.jpeg" class="img-fluid" alt="Presentation" style="max-width: 100%; height: auto;">
-                    </div>
-                </div>
+            <div class="footer-left">
+                <img src="images/logo/ERPlogo.png" alt="LHIKE ERP Logo" class="footer-logo">
+                <p>
+                    <img src="images/logo/pin.svg" alt="Location Icon" class="icon"> 
+                    3rd floor Plazuela de Molino, 9006 Molino Blvd, Bacoor City, Cavite
+                </p>
+                <p>
+                    <img src="images/logo/envelope.svg" alt="Email Icon" class="icon"> 
+                    example.sample@gmail.com
+                </p>
+                <p>
+                    <img src="images/logo/phone.svg" alt="Phone Icon" class="icon"> 
+                    +63 000 000 0000
+                </p>
             </div>
+
+            <div class="footer-right">
+    <img src="images/logo/valenin.png" alt="VALENIN Logo" class="footer-logo">
+    <form class="subscribe-form">
+        <div class="input-group">
+            <input type="email" placeholder="ENTER YOUR EMAIL" required>
+            <button type="submit">SUBMIT</button>
         </div>
-    </section>
-</section>
+    </form>
+</div>
+
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            © 2025 LHIKE ERP. All rights reserved.
+        </div>
+    </div>
+    
+</footer>
+
+
+<style>
+  .footer {
+    background: #002744;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-left {
+    margin-left: 20px; /* Adjust this value as needed */
+    padding-left: 20px; /* Optional: Adds extra spacing */
+}
+
+
+.footer-left, .footer-right {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.footer-left img.footer-logo {
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.footer-left p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-left .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.subscribe-form input {
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    width: 250px;
+    outline: none;
+}
+
+.subscribe-form button {
+    background: #005A9C; /* Adjust to your theme */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-form button:hover {
+    background: #003F6B;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.icon {
+    width: 16px;  /* Adjust size as needed */
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5); /* Light white with opacity */
+    margin: 20px 0; /* Adds spacing above and below */
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 150px; /* Adjust size as needed */
+    margin-bottom: 15px;
+}
+
+
+</style>
   
         
 
