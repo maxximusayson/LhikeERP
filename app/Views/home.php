@@ -208,10 +208,20 @@
                     color: #003559;
                 }
                 .gradient-bg {
-    background: linear-gradient(to bottom, #004A7C, #002744);
-    min-height: 100vh;
-    width: 100%;
-}
+                  background: linear-gradient(to bottom, #004A7C, #002744);
+                  min-height: 100vh;
+                  width: 100%;
+              }
+              .fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+  }
+
+  .fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
 
     </style>
@@ -247,7 +257,7 @@
       <h1 style="color: white; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 2.5rem;">
         <span style="border-left: 5px solid white; padding-left: 10px;">Our</span>
         <span style="color: #002744; background-color: white; padding: 2px 8px; border-radius: 3px;">Services</span>
-        </h1>
+      </h1>
     </div>
     <br><br>
 
@@ -255,155 +265,150 @@
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         
-      <!-- Card 1 -->
-<div class="col">
-  <div class="card text-center border-0 elevated-shadow h-100">
-    <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Business Integration</div>
+        <!-- Card 1 -->
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Business Integration</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/BusinessIntegration.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/BusinessIntegration.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-
-        
         <!-- Card 2 -->
-        <div class="col">
-        <div class="card text-center border-0 elevated-shadow h-100">
-        <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Enterprise Management</div>
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Enterprise Management</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/EnterpriseManagement.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/EnterpriseManagement.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-        
         <!-- Card 3 -->
-        <div class="col">
-        <div class="card text-center border-0 elevated-shadow h-100">
-        <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Centralized Data</div>
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Centralized Data</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/CentralizedData.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/CentralizedData.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-        
         <!-- Card 4 -->
-        <div class="col">
-        <div class="card text-center border-0 elevated-shadow h-100">
-        <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Streamlined Operations</div>
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Streamlined Operations</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/streamlinedOperations.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/streamlinedOperations.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-        
         <!-- Card 5 -->
-        <div class="col">
-        <div class="card text-center border-0 elevated-shadow h-100">
-        <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Process Automations</div>
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Process Automations</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/ProcessAutomations.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/ProcessAutomations.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
         <!-- Card 6 -->
-<div class="col">
-  <div class="card text-center border-0 elevated-shadow h-100">
-    <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" 
-           class="card-img-top dimmed-image" 
-           alt="Business Integration" />
-
-      <!-- Title at the Top -->
-      <div class="top-title">Operational Efficiency</div>
-
-      <!-- Overlay Icon (Centered & Responsive) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/OperationalEfficiency.svg" 
-             class="icon-size" 
-             alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-
-
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Operational Efficiency</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/OperationalEfficiency.svg" class="icon-size" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
+              </p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div> 
   </div>
 </section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = document.querySelectorAll('.fade-up');
+    
+    function checkVisibility() {
+      fadeElements.forEach(function(element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          element.classList.add('visible');
+        } else {
+          element.classList.remove('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
 
 
   <!-- Who are we/what we believe in section -->
@@ -447,9 +452,6 @@
     </section>
 </section>
 
-
-
-
 <style>
 .section-title {
     font-size: 70px;
@@ -476,26 +478,15 @@
 }
 
 .image-container img {
-    border: 5px solid #ffffff;
+    border: 10px solid #ffffff;
     transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6); 
 }
 
-.image-container:hover img {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
-    transform: scale(1.05);
+.image-container img:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
 }
 
-.image-container {
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-}
-
-.image-container:hover .corner-decoration {
-    border-color: #00aaff;
-    box-shadow: 0 0 10px #00aaff;
-}
 
 .text-end {
     text-align: right !important;
@@ -547,6 +538,20 @@ document.addEventListener("DOMContentLoaded", function() {
     checkVisibility();
 });
 </script>
+
+
+
+
+<section class="container-fluid" id="containerfluid2" 
+  style="background: linear-gradient(to bottom, #004A7C, #002744); padding: 150px 0;"></section>
+
+
+  
+
+
+
+
+
 
 
 
