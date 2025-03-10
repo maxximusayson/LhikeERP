@@ -451,17 +451,15 @@
 
 
 <style>
-/* Increase size of section title */
 .section-title {
-    font-size: 70px; /* Increased size */
+    font-size: 70px;
     font-weight: bold;
     color: #fff;
     display: inline-block;
 }
 
-/* Highlighted word size adjustment */
 .section-title .highlight-text {
-    font-size: 55px; /* Adjusted size for highlighted word */
+    font-size: 55px;
     background: #fff;
     color: #003559;
     padding: 5px 10px;
@@ -469,42 +467,36 @@
     border-radius: 3px;
 }
 
-/* Make the text white */
 .section-text {
     font-size: 18px;
     font-family: Arial;
     font-weight: 300;
     margin-top: 10px;
-    color: #ffffff; /* Set text color to white */
+    color: #ffffff;
 }
 
-/* Add White Border to the Image */
 .image-container img {
-    border: 5px solid #ffffff; /* White border */
-    transition: all 0.3s ease-in-out; /* Smooth transition for effects */
+    border: 5px solid #ffffff;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Hover Effect: Add Glow and Slight Zoom */
 .image-container:hover img {
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Glowing effect in white */
-    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transform: scale(1.05);
 }
 
-/* Image Container with Hover Effect */
 .image-container {
     position: relative;
     display: inline-block;
     overflow: hidden;
-    transition: all 0.3s ease-in-out; /* Smooth transition for effects */
+    transition: all 0.3s ease-in-out;
 }
 
-/* Hover Effect: Glow */
 .image-container:hover .corner-decoration {
-    border-color: #00aaff; /* Change to a modern blue */
+    border-color: #00aaff;
     box-shadow: 0 0 10px #00aaff;
 }
 
-/* Alignment Fixes */
 .text-end {
     text-align: right !important;
 }
@@ -513,30 +505,27 @@
     text-align: left !important;
 }
 
-/* Main Section */
 .section-container {
     color: #fff;
 }
 
-/* Text Section */
 .text-section {
     text-align: left;
     padding-left: 50px;
 }
-/* Initial state: elements are transparent and moved down */
+
 .fade-up {
     opacity: 0;
-    transform: translateY(50px); /* Start lower */
+    transform: translateY(50px);
     transition: all 0.6s ease-in-out;
 }
 
-/* Final state when they are fully visible */
 .fade-up.visible {
     opacity: 1;
-    transform: translateY(0); /* Move to the original position */
+    transform: translateY(0);
 }
-
 </style>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", function() {
