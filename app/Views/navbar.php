@@ -113,7 +113,7 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == '') ? 'active' : '' ?>" href="<?= base_url('/home') ?>">HOMe</a>
+                    <a class="nav-link <?= (uri_string() == '') ? 'active' : '' ?>" href="<?= base_url('/home') ?>">HOME</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= (uri_string() == 'about') ? 'active' : '' ?>" href="<?= base_url('about') ?>">ABOUT</a>
