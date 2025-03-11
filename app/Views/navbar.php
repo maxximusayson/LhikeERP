@@ -132,7 +132,191 @@
         </div>
 
         <!-- Contact Button (Hidden on Mobile) -->
-        <a href="<?= base_url('contact') ?>" class="btn contact-btn d-none d-lg-block">CONTACT US</a>
+<a href="#" class="btn contact-btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal">
+    CONTACT US
+</a>
+
+<!-- Contact Modal (No Dim Effect) -->
+<div class="modal fade" id="contactModal" data-bs-backdrop="false" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl"> 
+        <div class="modal-content custom-modal">
+            <!-- Close Button (Icon) -->
+            <button type="button" class="close-icon" data-bs-dismiss="modal" aria-label="Close">
+                ✖
+            </button>
+
+            <div class="modal-body d-flex p-0">
+                <!-- Left Side (Image & Text) -->
+                <div class="modal-left">
+                    <h2>Let's get in touch</h2>
+                    <p>We're open for any suggestions or just to have a chat</p>
+                    <img src="images/homepage images/Process Automations.jpg" alt="Contact Icons">
+                </div>
+
+                <!-- Right Side (Contact Form) -->
+                <div class="modal-right">
+                    <h3>Contact Us</h3>
+                    <form>
+                        <div class="mb-3">
+                            <input type="text" class="form-control custom-input" placeholder="FULL NAME" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" class="form-control custom-input" placeholder="EMAIL" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea class="form-control custom-input" placeholder="MESSAGE" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn custom-btn">SEND MESSAGE →</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (Required for Modal) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom CSS -->
+<style>
+/* Remove Modal Backdrop (Dim Effect) */
+.modal-backdrop {
+    display: none !important;
+}
+
+/* Modal two-column layout */
+.modal-body {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+/* Left Side (Image & Text) */
+.modal-left {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    overflow: hidden;
+    background: url('images/homepage images/dimpic.png') no-repeat center center;
+    background-size: cover;
+}
+
+.modal-left img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures full coverage without distortion */
+    z-index: -1; /* Moves the image behind the text */
+}
+
+.modal-left h2, 
+.modal-left p {
+    position: relative;
+    z-index: 2;
+    max-width: 80%;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Improves readability */
+}
+
+
+.modal-left h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.modal-left p {
+    font-size: 14px;
+}
+
+.modal-left img {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Right Side (Form) */
+.modal-right {
+    flex: 1;
+    background: linear-gradient(135deg, #003366, #0066cc); /* Dark Blue to Lighter Blue */
+    padding: 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+/* Form Input Styling */
+.custom-input {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.custom-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Submit Button */
+.custom-btn {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.custom-btn:hover {
+    background: white;
+    color: #003366;
+}
+
+/* Close Button (Icon in Top Right) */
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+    z-index: 1051;
+}
+
+.close-icon:hover {
+    color: #ff4444; 
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .modal-body {
+        flex-direction: column;
+    }
+
+    .modal-left,
+    .modal-right {
+        flex: none;
+        width: 100%;
+    }
+}
+</style>
+
     </div>
 </nav>
 
