@@ -908,8 +908,8 @@ body {
     flex-wrap: wrap;
 }
 .footer-left {
-    margin-left: 20px; /* Adjust this value as needed */
-    padding-left: 20px; /* Optional: Adds extra spacing */
+    margin-left: 20px; 
+    padding-left: 20px; 
 }
 
 
