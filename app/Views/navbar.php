@@ -10,25 +10,25 @@
     <style>
         /* Navbar Styling */
         .navbar {
-            background-color: #003559; /* Dark Blue */
+            background-color: #003559; 
             padding: 12px 0;
-            position: sticky; /* Make the navbar sticky */
-            top: 0; /* Stick to the top */
-            z-index: 1000; /* Ensure it stays above other content */
+            position: sticky; 
+            top: 0; 
+            z-index: 1000; 
         }
 
         .navbar-brand img {
-            height: 40px; /* Adjust logo height */
+            height: 40px; 
         }
 
-        /* Default nav link style */
+        
         .nav-link {
             position: relative;
             font-family: 'Montserrat', sans-serif;
             font-weight: 800;
             color: white !important;
             text-decoration: none;
-            padding: 10px 15px; /* Add spacing around links */
+            padding: 10px 15px; 
             transition: color 0.3s ease-in-out;
         }
 
@@ -55,14 +55,14 @@
             width: 100%;
         }
 
-        /* Centered Navbar Links with Spacing */
+        
         .navbar-nav {
-            gap: 40px; /* Space between nav links */
+            gap: 40px; 
         }
 
         /* Contact Button */
         .contact-btn {
-            background: linear-gradient(to bottom, #2693BE, #16608f); /* Applied #2693BE */
+            background: linear-gradient(to bottom, #2693BE, #16608f); 
             color: white;
             font-weight: bold;
             border: none;
@@ -77,17 +77,17 @@
 
         /* Hover Effect */
         .contact-btn:hover {
-            background: linear-gradient(to bottom, #16608f, #2693BE); /* Reverse gradient on hover */
+            background: linear-gradient(to bottom, #16608f, #2693BE); 
             transform: scale(1.05);
         }
 
-        /* Responsive Design */
+
         @media (max-width: 992px) {
             .navbar-nav {
                 flex-direction: column;
                 align-items: center;
                 text-align: center;
-                gap: 10px; /* Reduce gap for mobile */
+                gap: 10px; 
             }
 
             .contact-btn {
@@ -131,12 +131,12 @@
             </ul>
         </div>
 
-        <!-- Contact Button (Hidden on Mobile) -->
+        <!-- Contact Button  -->
 <a href="#" class="btn contact-btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal">
     CONTACT US
 </a>
 
-<!-- Contact Modal (No Dim Effect) -->
+<!-- modal -->
 <div class="modal fade" id="contactModal" data-bs-backdrop="false" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl"> 
         <div class="modal-content custom-modal">
@@ -146,17 +146,44 @@
             </button>
 
             <div class="modal-body d-flex p-0">
-                <!-- Left Side (Image & Text) -->
+                <!-- Left Side  -->
                 <div class="modal-left">
-                    <h2>Let's get in touch</h2>
-                    <p>We're open for any suggestions or just to have a chat</p>
-                    <img src="images/homepage images/Process Automations.jpg" alt="Contact Icons">
-                </div>
+    <!-- Dark Overlay for Better Visibility -->
+    <div class="overlay"></div>
 
-                <!-- Right Side (Contact Form) -->
+    <!-- Logo -->
+    <div class="logo-container">
+        <img src="images/logo.png" alt="Company Logo" class="modal-logo">
+    </div>
+
+    <h2>Let's get in touch</h2>
+    <p>We're open for any suggestions or just to have a chat</p>
+
+    <!-- Contact Details (Phone & Location) -->
+    <div class="contact-details">
+        <div class="contact-item">
+            <img src="images/icons/phone.png" alt="Phone Icon" class="icon">
+            <span>+63 123 456 8910</span>
+        </div>
+        <div class="contact-item">
+            <img src="images/icons/location.png" alt="Location Icon" class="icon">
+            <span>3rd floor Plazuela de Molino, 9006 Molino Blvd, Bacoor City, Cavite</span>
+        </div>
+    </div>
+
+    <!-- Contact Image -->
+    <img src="images/homepage images/Process Automations.jpg" alt="Contact Icons" class="contact-image">
+</div>
+
+
+                <!-- Right Side -->
                 <div class="modal-right">
+                <div class="logo-container">
+                        <img src="images/logo/ERPlogo.png" alt="Company Logo" class="modal-logo">
+                    </div>
                     <h3>Contact Us</h3>
                     <form>
+                        
                         <div class="mb-3">
                             <input type="text" class="form-control custom-input" placeholder="FULL NAME" required>
                         </div>
@@ -174,24 +201,26 @@
     </div>
 </div>
 
-<!-- Bootstrap JS (Required for Modal) -->
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<!-- Custom CSS -->
+
 <style>
-/* Remove Modal Backdrop (Dim Effect) */
+
 .modal-backdrop {
     display: none !important;
 }
 
-/* Modal two-column layout */
+
 .modal-body {
     display: flex;
     flex-direction: row;
     width: 100%;
 }
 
-/* Left Side (Image & Text) */
+
+/* Modal Left Section */
 .modal-left {
     flex: 1;
     position: relative;
@@ -200,11 +229,46 @@
     justify-content: center;
     align-items: center;
     padding: 40px;
-    text-align: center;
+    text-align: left;
     overflow: hidden;
     background: url('images/homepage images/dimpic.png') no-repeat center center;
     background-size: cover;
 }
+
+/* Logo Styling */
+.modal-logo {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+}
+
+/* Contact Details Styling */
+.contact-details {
+    margin: 20px 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.contact-item span {
+    color: white; 
+    font-size: 10px;
+    font-weight: bold;
+}
+
+
+
 
 .modal-left img {
     position: absolute;
@@ -212,8 +276,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures full coverage without distortion */
-    z-index: -1; /* Moves the image behind the text */
+    object-fit: cover; 
+    z-index: -1; 
 }
 
 .modal-left h2, 
@@ -222,7 +286,7 @@
     z-index: 2;
     max-width: 80%;
     color: white;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Improves readability */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); 
 }
 
 
@@ -241,10 +305,10 @@
     border-radius: 10px;
 }
 
-/* Right Side (Form) */
+
 .modal-right {
     flex: 1;
-    background: linear-gradient(135deg, #003366, #0066cc); /* Dark Blue to Lighter Blue */
+    background: linear-gradient(135deg, #003366, #0066cc); 
     padding: 40px;
     color: white;
     display: flex;
@@ -284,7 +348,7 @@
     color: #003366;
 }
 
-/* Close Button (Icon in Top Right) */
+
 .close-icon {
     position: absolute;
     top: 20px;
@@ -303,7 +367,7 @@
     color: #ff4444; 
 }
 
-/* Mobile Responsive */
+
 @media (max-width: 768px) {
     .modal-body {
         flex-direction: column;
@@ -315,6 +379,29 @@
         width: 100%;
     }
 }
+
+/* Logo container for positioning */
+.logo-container {
+    display: flex;
+    justify-content: center;  /* Centers the logo horizontally */
+    align-items: center;
+    margin-bottom: 20px; /* Adds spacing below the logo */
+}
+
+/* Logo Styling */
+.modal-logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3)); /* Adds a subtle shadow */
+}
+
+/* Adjust the Contact Image to Fit Better */
+.contact-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Soft rounded corners */
+}
+
 </style>
 
     </div>
