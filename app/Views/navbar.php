@@ -100,7 +100,7 @@
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <!-- Navbar Brand / Logo -->
-        <a class="navbar-brand" href="<?= base_url('/') ?>">
+        <a class="navbar-brand" href="<?= base_url('/home') ?>">
             <img src="<?= base_url('images/logo/ERPlogo.png') ?>" alt="ERP Logo">
         </a>
 
@@ -122,7 +122,7 @@
                     <a class="nav-link <?= (uri_string() == 'documentation') ? 'active' : '' ?>" href="<?= base_url('documentation') ?>">DOCUMENTATION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == 'updates') ? 'active' : '' ?>" href="<?= base_url('updates') ?>">UPDATES</a>
+                    <a class="nav-link <?= (uri_string() == 'release') ? 'active' : '' ?>" href="<?= base_url('release') ?>">RELEASE</a>
                 </li>
             </ul>
         </div>
