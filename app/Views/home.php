@@ -49,17 +49,17 @@
 
           
             #title1 h1 {
-                font-family: 'Montserrat', sans-serif;
+                font-family: 'Montserrat';
                 font-weight: 800; 
                 font-size: 3rem; 
-                margin-bottom: 10px; 
-                margin-top: -10px; 
+                margin-bottom: 80px; 
+                margin-top: -100px; 
             }
 
             
             #description1 h2 {
-                font-family: 'Arial', sans-serif;
-                font-weight: 300; /* Light weight */
+                font-family: 'Montserrat';
+                font-weight: 400; 
                 font-size: 1.1rem;
                 max-width: 700px;
                 line-height: 1.6;
@@ -127,20 +127,60 @@
 
                 
                 .overlay-icon {
-                position: absolute;
-                top: 60%;
-                left: 47%;
-                transform: translate(-50%, -50%); 
-                width: 30%; 
-                max-width: 120px; 
-                z-index: 3; 
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 25%;
+                  max-width: 120px;
+                  height: auto;
+                  z-index: 3;
                 }
 
-            
                 .overlay-icon img {
-                width: 130%;
-                height: 100%;
-                opacity: 1;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: contain;
+                  opacity: 1;
+                }
+
+                @media (max-width: 980px) and (min-width: 991px) {
+                  .overlay-icon {
+                    top: 50%;
+                    width: 35%;
+                    max-width: 110px;
+                  }
+
+                  .overlay-icon img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+
+                @media (max-width: 768px) {
+                  .overlay-icon {
+                    top: 50%;
+                    width: 40%;
+                    max-width: 100px;
+                  }
+
+                  .overlay-icon img {
+                    width: 100%;
+                    height: 100%;
+                  }
+                }
+
+                @media (max-width: 480px) {
+                  .overlay-icon {
+                    top: 45%;
+                    width: 50%;
+                    max-width: 80px;
+                  }
+
+                  .overlay-icon img {
+                    width: 100%;
+                    height: 100%;
+                  }
                 }
                 .elevated-shadow {
                 box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
@@ -202,11 +242,32 @@
                 }
                 }
                 .card-text {
-                    font-family: 'Arial';
-                    font-weight: 400; /* Normal weight */
+                    font-family: 'Montserrat';
+                    font-weight: 400; 
                     font-size: 16px;
                     color: #003559;
                 }
+                .gradient-bg {
+                  background: linear-gradient(to bottom, #004A7C, #002744);
+                  min-height: 100vh;
+                  width: 100%;
+              }
+              .fade-up {
+                opacity: 0;
+                transform: translateY(50px);
+                transition: all 0.6s ease-in-out;
+              }
+
+              .fade-up.visible {
+                opacity: 1;
+                transform: translateY(0);
+              }
+              @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+              .card-img-top {
+                width: 100%;
+                height: 400px; 
+                object-fit: cover; 
+              }
 
 
     </style>
@@ -239,10 +300,10 @@
   <div class="container" id="layout2">
     <!-- Title -->
     <div class="container text-center" id="title2">
-      <h1 style="color: white; font-family: 'Montserrat', sans-serif; font-weight: 800; font-size: 2.5rem;">
+      <h1 style="color: white; font-family: 'Montserrat'; font-weight: 800; font-size: 2.5rem;">
         <span style="border-left: 5px solid white; padding-left: 10px;">Our</span>
         <span style="color: #002744; background-color: white; padding: 2px 8px; border-radius: 3px;">Services</span>
-        </h1>
+      </h1>
     </div>
     <br><br>
 
@@ -250,155 +311,726 @@
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-4">
         
-      <!-- Card 1 -->
-<div class="col">
-  <div class="card text-center border-0 elevated-shadow h-100">
-    <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Business Integration</div>
+        <!-- Card 1 -->
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Business Integration</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/BusinessIntegration.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/BusinessIntegration.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-
-        
         <!-- Card 2 -->
-        <div class="col">
-        <div class="card text-center border-0 elevated-shadow h-100">
-        <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Enterprise Management</div>
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/EnterpriseManagement.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Enterprise Management</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/EnterpriseManagement.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+              LHIKE ERP optimizes and streamlines business operations by integrating logistics, HR, inventory, kanban, and e-commerce into a unified enterprise management platform.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/EnterpriseManagement.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-        
         <!-- Card 3 -->
-        <div class="col">
-        <div class="card text-center border-0 elevated-shadow h-100">
-        <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Centralized Data</div>
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/CentralizedData.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Centralized Data</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/CentralizedData.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+              LHIKE ERP centralizes business data, eliminating silos and ensuring seamless access to critical information.             
+             </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/CentralizedData.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-        
         <!-- Card 4 -->
-        <div class="col">
-        <div class="card text-center border-0 elevated-shadow h-100">
-        <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Streamlined Operations</div>
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Streamlined Operations.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Streamlined Operations</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/streamlinedOperations.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+              Achieve efficiency with LHIKE ERP, integrating logistics, HR, inventory, kanban workflows, and e-commerce into one streamlined platform for optimized business operations.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/streamlinedOperations.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-        
         <!-- Card 5 -->
-        <div class="col">
-        <div class="card text-center border-0 elevated-shadow h-100">
-        <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
-      
-      <!-- Title at the Top -->
-      <div class="top-title">Process Automations</div>
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Process Automations.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Process Automations</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/ProcessAutomations.svg" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+              Boost efficiency with LHIKE ERP, automating logistics, HR, inventory, kanban workflows, and e-commerce, so you can focus on strategic growth.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <!-- Overlay Icon (In Front) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/ProcessAutomations.svg" alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
         <!-- Card 6 -->
-<div class="col">
-  <div class="card text-center border-0 elevated-shadow h-100">
-    <div class="position-relative">
-      <!-- Background Image with Dim Effect -->
-      <img src="images/homepage images/Business Integration.jpg" 
-           class="card-img-top dimmed-image" 
-           alt="Business Integration" />
-
-      <!-- Title at the Top -->
-      <div class="top-title">Operational Efficiency</div>
-
-      <!-- Overlay Icon (Centered & Responsive) -->
-      <div class="overlay-icon">
-        <img src="images/homepage images/OperationalEfficiency.svg" 
-             class="icon-size" 
-             alt="icon" />
-      </div>
-    </div>
-    <div class="card-body">
-      <p class="card-text">
-        LHIKE ERP integrates logistics, HR, inventory, kanban, and e-commerce for streamlined operations and real-time insights.
-      </p>
-    </div>
-  </div>
-</div>
-
-
+        <div class="col fade-up">
+          <div class="card text-center border-0 elevated-shadow h-100">
+            <div class="position-relative">
+              <img src="images/homepage images/Operational Efficiency.jpg" class="card-img-top dimmed-image" alt="Business Integration" />
+              <div class="top-title">Operational Efficiency</div>
+              <div class="overlay-icon">
+                <img src="images/homepage images/OperationalEfficiency.svg" class="icon-size" alt="icon" />
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+              Maximize performance with LHIKE ERP, integrating logistics, HR, inventory, kanban, and e-commerce to streamline operations, cut costs, and boost productivity.
+              </p>
+            </div>
+          </div>
+        </div>
+        
       </div>
     </div> 
   </div>
 </section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = document.querySelectorAll('.fade-up');
+    
+    function checkVisibility() {
+      fadeElements.forEach(function(element) {
+        const rect = element.getBoundingClientRect();
+        if (rect.top < window.innerHeight && rect.bottom >= 0) {
+          element.classList.add('visible');
+        } else {
+          element.classList.remove('visible');
+        }
+      });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility();
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- Who are we/what we believe in section -->
+  <section class="container-fluid" id="who-are-we-section" 
+  style="background: linear-gradient(to bottom, #002744, #004A7C); padding: 150px 0;">
+  
+    <section class="custom-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Image -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center fade-up">
+                    <div class="image-container" style="border: 10px solid #ffffff; padding: 5px;">
+                        <img src="images/homepage images/homepage2.jpeg" class="img-fluid" alt="Presentation" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="col-md-6 text-section">
+                    <!-- What We Believe In (Right-Aligned) -->
+                    <div class="section-box text-end fade-up" style="margin-bottom: 110px;">
+                        <h2 class="section-title">What we <span class="highlight-text">believe</span></h2>
+                        <p class="section-text">
+                            At the heart of our mission is the belief that businesses, regardless of their size, 
+                            should have access to efficient and integrated solutions.
+                        </p>
+                    </div>
+
+                    <!-- Who Are We (Left-Aligned with White Box) -->
+                    <div class="section-box white-box text-start fade-up" style="padding: 30px;">
+                        <h2 class="section-title">
+                            <span class="highlight-text">Who</span> are we?
+                        </h2>
+                        <p class="section-text">
+                            LHIKE ERP delivers tailored IT solutions to help businesses optimize their processes, 
+                            improve efficiency, and gain real-time insights.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+<style>
+/* Link to Montserrat font (add this to the <head> section of your HTML) */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
+
+/* Section Title */
+.section-title {
+    font-family: 'Montserrat'; 
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+    display: inline-block;
+}
+
+.section-title .highlight-text {
+    font-family: 'Montserrat'; /* Apply Montserrat */
+    font-size: 55px;
+    background: #fff;
+    color: #003559;
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* Section Text */
+.section-text {
+    font-family: 'Montserrat'; /* Apply Montserrat */
+    font-size: 28px;
+    font-weight: 300;
+    margin-top: 6px;
+    color: #ffffff;
+}
+
+/* Image Container */
+.image-container img {
+    border: 10px solid #ffffff;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+.image-container img:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Text Alignment */
+.text-end {
+    text-align: right !important;
+}
+
+.text-start {
+    text-align: left !important;
+}
+
+/* Section Container */
+.section-container {
+    color: #fff;
+}
+
+/* Text Section */
+.text-section {
+    font-family: 'Montserrat'; /* Apply Montserrat */
+    text-align: left;
+    padding-left: 50px;
+}
+
+/* Fade-up Effect */
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-in-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+</style>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = document.querySelectorAll('.fade-up');
+    
+    function checkVisibility() {
+        fadeElements.forEach(function(element) {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add('visible');
+            } else {
+                element.classList.remove('visible');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    
+    checkVisibility();
+});
+</script>
+
+
+
+
+<!-- Mission -->
+<section class="container-fluid" id="containerfluid2" 
+  style="background: linear-gradient(to bottom, #004A7C, #002744); padding: 110px 0;">
+  
+    <section class="custom-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Image -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center fade-up">
+                    <div class="image-container" style="border: 10px solid #ffffff; padding: 5px;">
+                        <img src="images/homepage images/homepage3.png" class="img-fluid" alt="Presentation" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+
+                <!-- Right Text Content -->
+                <div class="col-md-6 text-section d-flex justify-content-center align-items-center fade-up">
+                    <div class="section-box text-end">
+                        <h2 class="section-title">Our <span class="highlight-text">Mission</span></h2>
+
+                        <p class="section-text">
+                        Our mission is to empower businesses through innovative and reliable IT solutions.
+                        We are committed to providing exceptional service and support, tailored to the unique needs of each client. 
+                        As our goal is to enhance operational efficiency, foster growth, and drive success by leveraging the latest technologies
+                        and best practices in the industry. We strive to build long-lasting partnerships with our clients, helping them navigate 
+                        the complexities of the digital landscape with confidence and ease.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+<!-- Vision -->
+
+<section class="container-fluid" id="containerfluid2" 
+  style="background: linear-gradient(to bottom, #002744, #004A7C); padding: 110px 0;">
+  
+    <section class="custom-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Text Content (now first) -->
+                <div class="col-md-6 text-section d-flex justify-content-center align-items-center fade-up">
+                    <div class="section-box text-start">
+                        <h2 class="section-title">Our <span class="highlight-text">Vision</span></h2>
+
+                        <p class="section-text">
+                        Our vision is to be the leading provider of innovative IT solutions, recognized for our commitment to excellence and our ability to transform businesses through technology.
+                        We aspire to create a world where businesses of all sizes can seamlessly integrate advanced IT infrastructure, unlocking their full potential and achieving unparalleled success. 
+                        By continuously advancing our expertise and staying at the forefront of technological advancements, we aim to set the standard for quality and reliability in the IT services industry.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Image (now second) -->
+                <div class="col-md-6 d-flex justify-content-center align-items-center fade-up">
+                    <div class="image-container" style="border: 10px solid #ffffff; padding: 5px;">
+                        <img src="images/homepage images/homepage4.jpeg" class="img-fluid" alt="Presentation" style="max-width: 100%; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+<!-- board pics -->
+
+<section class="container-fluid" id="containerfluid2" 
+  style="background: linear-gradient(to bottom, #004A7C,  #002744); padding: 110px 0;">
+ 
+  <section class="custom-section">
+    <div class="container">
+        <h2 class="section-title text-center fade-up">
+            We believe that <span class="highlight-text">people</span> are everything
+        </h2><br><br><br><br><br><br><br>
+
+        <div class="team-grid">
+            <!-- Team Members -->
+            <div class="team-member fade-up">
+                <img src="images/Valenin/MaychellAlcorin.png" alt="Maychell Alcorin">
+                <h3>Maychell Alcorin</h3>
+                <p>Valenin Founder</p>
+            </div>
+
+            <div class="team-member fade-up" style="margin-top: 40px;">
+            <img src="images/Valenin/AinaMae.png" alt="Aina Mae Arroyo">
+            <h3>Aina Mae Arroyo</h3>
+            <p>QA & Frontline Support</p>
+          </div>
+
+
+            <div class="team-member fade-up">
+                <img src="images/Valenin/JenealleMae.png" alt="Jenealle Mae Jimena">
+                <h3>Jenealle Mae Jimena</h3>
+                <p>Executive Assistant & UI/UX Designer</p>
+            </div>
+
+            <div class="team-member fade-up">
+                <img src="images/Valenin/Vesanie.png" alt="Jenealle Mae Jimena">
+                <h3>Vesanie Bernal</h3>
+                <p>Quality Assurance</p>
+            </div>
+
+            <div class="team-member fade-up" style="margin-top: 40px;">
+                <img src="images/Valenin/KarloEstano.png" alt="Maychell Alcorin">
+                <h3>Karlo Estano</h3>
+                <p>Web Developer</p>
+            </div>
+
+            <div class="team-member fade-up">
+                <img src="images/Valenin/MaychellAlcorin.png" alt="Aina Mae Arroyo">
+                <h3>Aina Mae Arroyo</h3>
+                <p>QA & Frontline Support</p>
+            </div>
+
+            <div class="team-member fade-up">
+                <img src="images/Valenin/MaychellAlcorin.png" alt="Aina Mae Arroyo">
+                <h3>Aina Mae Arroyo</h3>
+                <p>QA & Frontline Support</p>
+            </div>
+
+            <div class="team-member fade-up" style="margin-top: 40px;">
+                <img src="images/Valenin/MaychellAlcorin.png" alt="Jenealle Mae Jimena">
+                <h3>Jenealle Mae Jimena</h3>
+                <p>Executive Assistant & UI/UX Designer</p>
+            </div>
+
+            <div class="team-member fade-up">
+                <img src="images/Valenin/MaychellAlcorin.png" alt="Maychell Alcorin">
+                <h3>Maychell Alcorin</h3>
+                <p>CEO & Founder</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</section>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+    padding: 20px;
+}
+
+.team-member {
+    width: 320px;
+    height: 420px;
+    text-align: center;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.team-member img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.team-member h3 {
+    color: #003559;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.team-member p {
+    color: #003559;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.adjust-down {
+    margin-top: 30px;
+}
+
+.highlight-text {
+    color: #FFC107;
+    font-weight: 600;
+}
+
+.section-title {
+    color: white;
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = document.querySelectorAll('.fade-up');
+
+    function checkVisibility() {
+        fadeElements.forEach(function(element) {
+            const rect = element.getBoundingClientRect();
+            if (rect.top < window.innerHeight && rect.bottom >= 0) {
+                element.classList.add('visible'); 
+            } else {
+                element.classList.remove('visible'); 
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); 
+});
+
+</script>
+
+<footer class="footer">
+  
+    <div class="container">
+        <div class="footer-content">
+        <div class="footer-divider"></div>
+
+            <div class="footer-left">
+                <img src="images/logo/ERPlogo.png" alt="LHIKE ERP Logo" class="footer-logo">
+                <p>
+                    <img src="images/logo/pin.svg" alt="Location Icon" class="icon"> 
+                    3rd floor Plazuela de Molino, 9006 Molino Blvd, Bacoor City, Cavite
+                </p>
+                <p>
+                    <img src="images/logo/envelope.svg" alt="Email Icon" class="icon"> 
+                    example.sample@gmail.com
+                </p>
+                <p>
+                    <img src="images/logo/phone.svg" alt="Phone Icon" class="icon"> 
+                    +63 000 000 0000
+                </p>
+            </div>
+
+            <div class="footer-right">
+    <img src="images/logo/valenin.png" alt="VALENIN Logo" class="footer-logo">
+    <form class="subscribe-form">
+        <div class="input-group">
+            <input type="email" placeholder="ENTER YOUR EMAIL" required>
+            <button type="submit">SUBMIT</button>
+        </div>
+    </form>
+</div>
+
+        </div>
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+            © 2025 LHIKE ERP. All rights reserved.
+        </div>
+    </div>
+    
+</footer>
+
+
+<style>
+  .footer {
+    background: #002744;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+}
+
+.footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-left {
+    margin-left: 20px; /* Adjust this value as needed */
+    padding-left: 20px; /* Optional: Adds extra spacing */
+}
+
+
+.footer-left, .footer-right {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.footer-left img.footer-logo {
+    max-width: 180px;
+    margin-bottom: 15px;
+}
+
+.footer-left p {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.footer-left .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content */
+    text-align: center;
+}
+
+.footer-title {
+    font-size: 20px;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-group {
+    display: flex;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.subscribe-form input {
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    width: 250px;
+    outline: none;
+}
+
+.subscribe-form button {
+    background: #005A9C; /* Adjust to your theme */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.subscribe-form button:hover {
+    background: #003F6B;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 20px;
+    opacity: 0.8;
+}
+
+.icon {
+    width: 16px;  /* Adjust size as needed */
+    height: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.5); /* Light white with opacity */
+    margin: 20px 0; /* Adds spacing above and below */
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-logo {
+    width: 150px; /* Adjust size as needed */
+    margin-bottom: 15px;
+}
+
+
+</style>
+  
+        
+
+
+  
+
+
+
+
+
+
 
 
 </body>
