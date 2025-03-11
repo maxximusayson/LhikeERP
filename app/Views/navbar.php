@@ -126,11 +126,7 @@
                     <a class="nav-link <?= (uri_string() == 'documentation') ? 'active' : '' ?>" href="<?= base_url('documentation') ?>">DOCUMENTATION</a>
                 </li>
                 <li class="nav-item">
-<<<<<<< HEAD
                     <a class="nav-link <?= (uri_string() == 'release') ? 'active' : '' ?>" href="<?= base_url('release') ?>">RELEASE</a>
-=======
-                    <a class="nav-link <?= (uri_string() == 'updates') ? 'active' : '' ?>" href="<?= base_url('updates') ?>">RELEASE</a>
->>>>>>> 5e1aa4ad5a5aecd58d12a1bd77a9fd97c8a8d89b
                 </li>
             </ul>
         </div>
