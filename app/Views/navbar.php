@@ -123,7 +123,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link <?= (uri_string() == 'documentation') ? 'active' : '' ?>" href="<?= base_url('documentation') ?>">DOCUMENTATION</a>
+                    <a class="nav-link <?= (uri_string() == '') ? '' : '' ?>" href="<?= base_url('documentation') ?>">DOCUMENTATION</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link <?= (uri_string() == 'release') ? 'active' : '' ?>" href="<?= base_url('release') ?>">RELEASE</a>
