@@ -472,10 +472,13 @@
                 </div>
 
                 <!-- Right Text Content -->
+                 <br><br>
                 <div class="col-md-6 text-section">
+                  <br><br><br><br>
                     <!-- What We Believe In (Right-Aligned) -->
                     <div class="section-box text-end fade-up" style="margin-bottom: 110px;">
-                        <h2 class="section-title">What we <span class="highlight-text">believe</span></h2>
+                    <h2 class="section-title bordered-title">What we <span class="highlight-text">believe</span></h2>
+
                         <p class="section-text">
                             At the heart of our mission is the belief that businesses, regardless of their size, 
                             should have access to efficient and integrated solutions.
@@ -485,7 +488,8 @@
                     <!-- Who Are We (Left-Aligned with White Box) -->
                     <div class="section-box white-box text-start fade-up" style="padding: 30px;">
                         <h2 class="section-title">
-                            <span class="highlight-text">Who</span> are we?
+                        <h2 class="section-title bordered-title"><span class="highlight-text">Who</span> are we?</h2>
+
                         </h2>
                         <p class="section-text">
                             LHIKE ERP delivers tailored IT solutions to help businesses optimize their processes, 
@@ -501,21 +505,34 @@
 
 
 <style>
-/* Link to Montserrat font (add this to the <head> section of your HTML) */
+  .bordered-title {
+    border-left: 5px solid white; /* Left border */
+    padding-left: 15px; /* Space between border and text */
+    display: inline-block; /* Keeps it wrapped around the text */
+}
+  .bordered-title {
+    border-left: 5px solid white; /* Left border */
+    padding-left: 15px; /* Adds spacing between text and border */
+    display: inline-block; /* Ensures proper wrapping */
+}
+/* Link to Montserrat font */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 /* Section Title */
 .section-title {
-    font-family: 'Montserrat'; 
-    font-size: 70px;
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 50px;
     font-weight: bold;
     color: #fff;
     display: inline-block;
+    text-align: center; /* Ensure center alignment */
+    width: 100%; /* Full width for proper alignment */
 }
 
+/* Highlighted Text */
 .section-title .highlight-text {
-    font-family: 'Montserrat'; /* Apply Montserrat */
-    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 50px;
     background: #fff;
     color: #003559;
     padding: 5px 10px;
@@ -525,11 +542,12 @@
 
 /* Section Text */
 .section-text {
-    font-family: 'Montserrat'; /* Apply Montserrat */
-    font-size: 28px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
     font-weight: 300;
     margin-top: 6px;
     color: #ffffff;
+    text-align: center; /* Center text for better responsiveness */
 }
 
 /* Image Container */
@@ -537,6 +555,11 @@
     border: 10px solid #ffffff;
     transition: all 0.3s ease-in-out;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    width: 100%; /* Ensures full responsiveness */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 500px; /* Prevents images from becoming too large */
+    display: block; /* Removes any inline spacing */
+    margin: 0 auto; /* Centers image */
 }
 
 .image-container img:hover {
@@ -555,11 +578,12 @@
 /* Section Container */
 .section-container {
     color: #fff;
+    padding: 40px 20px;
 }
 
 /* Text Section */
 .text-section {
-    font-family: 'Montserrat'; /* Apply Montserrat */
+    font-family: 'Montserrat', sans-serif;
     text-align: left;
     padding-left: 50px;
 }
@@ -575,6 +599,65 @@
     opacity: 1;
     transform: translateY(0);
 }
+
+/* 🔹 Responsive Adjustments */
+@media (max-width: 1024px) {
+    .section-title {
+        font-size: 40px;
+    }
+    
+    .section-title .highlight-text {
+        font-size: 40px;
+    }
+    
+    .section-text {
+        font-size: 18px;
+    }
+
+    .text-section {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 35px;
+        text-align: center; /* Ensures centering on mobile */
+    }
+
+    .section-title .highlight-text {
+        font-size: 35px;
+        padding: 4px 8px; /* Reduce padding */
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .text-section {
+        text-align: center; /* Aligns text in center on mobile */
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 28px; /* Adjust font size for small screens */
+    }
+
+    .section-title .highlight-text {
+        font-size: 28px;
+    }
+
+    .section-text {
+        font-size: 14px;
+    }
+
+    .image-container img {
+        max-width: 100%; /* Make images fully responsive */
+    }
+}
+
 
 </style>
 
@@ -742,11 +825,13 @@ document.addEventListener("DOMContentLoaded", function() {
     </div>
 </section>
 
+
 </section>
 
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+ 
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -773,10 +858,13 @@ body {
     justify-content: space-between;
 }
 
+/* Ensure images are fully visible */
 .team-member img {
     width: 100%;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain; /* Keeps full image visible without cropping */
+    border-radius: 8px;
+    background: #f5f5f5; /* Light background for better visibility */
 }
 
 .team-member h3 {
@@ -810,6 +898,7 @@ body {
     text-align: left;
 }
 
+/* Fade-up Animation */
 .fade-up {
     opacity: 0;
     transform: translateY(50px);
@@ -820,6 +909,28 @@ body {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* 🔹 Responsive Design */
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Stack vertically on mobile */
+    }
+
+    .team-member {
+        width: 90%; /* Full width on small screens */
+    }
+
+    .section-title {
+        text-align: center; /* Center-align the title on small screens */
+    }
+}
+
 
 
 </style>
@@ -846,10 +957,9 @@ body {
 </script>
 
 <footer class="footer">
-  
     <div class="container">
         <div class="footer-content">
-        <div class="footer-divider"></div>
+            <div class="footer-divider"></div>
 
             <div class="footer-left">
                 <img src="images/logo/ERPlogo.png" alt="LHIKE ERP Logo" class="footer-logo">
@@ -868,26 +978,114 @@ body {
             </div>
 
             <div class="footer-right">
-    <img src="images/logo/valenin.png" alt="VALENIN Logo" class="footer-logo">
-    <form class="subscribe-form">
-        <div class="input-group">
-            <input type="email" placeholder="ENTER YOUR EMAIL" required>
-            <button type="submit">SUBMIT</button>
+                <img src="images/logo/valenin.png" alt="VALENIN Logo" class="footer-logo">
+                <form class="subscribe-form">
+                    <div class="input-group">
+                        <input type="email" placeholder="ENTER YOUR EMAIL" required>
+                        <button type="submit">SUBMIT</button>
+                    </div>
+                </form>
+            </div>
         </div>
-    </form>
-</div>
 
-        </div>
         <div class="footer-divider"></div>
         <div class="footer-bottom">
             © 2025 LHIKE ERP. All rights reserved.
         </div>
     </div>
-    
 </footer>
 
-
 <style>
+  /* General Footer Styles */
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-logo {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    width: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 10px;
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* Subscribe Form */
+.subscribe-form .input-group {
+    display: flex;
+    max-width: 350px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.subscribe-form input {
+    flex: 1;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        width: 100%;
+    }
+
+    .subscribe-form .input-group {
+        max-width: 100%;
+    }
+
+    .subscribe-form input {
+        width: 70%;
+    }
+
+    .subscribe-form button {
+        width: 30%;
+    }
+}
   .footer {
     background: #002744;
     padding: 40px 0;
@@ -973,18 +1171,17 @@ body {
 }
 
 .subscribe-form button {
-    background: #005A9C; /* Adjust to your theme */
+    background: linear-gradient(to right, #2693BE, #1A6FA5); /* Gradient effect */
     color: white;
     border: none;
     padding: 10px 15px;
     font-size: 14px;
     cursor: pointer;
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
+    border-radius: 5px; /* Optional: Rounded corners */
 }
 
-.subscribe-form button:hover {
-    background: #003F6B;
-}
+
 
 
 .footer-bottom {
