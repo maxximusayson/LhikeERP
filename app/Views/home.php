@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to LhikeERP</title>
     <link rel="stylesheet" href="<?= base_url('/css/homeStyles.css') ?>">
+    <link rel="icon" type="image/png" href="<?= base_url(relativePath: 'images/logo/lhikeerp.png'); ?>">
 </head>
 <body>
 
