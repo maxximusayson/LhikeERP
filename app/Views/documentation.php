@@ -40,10 +40,7 @@
     </div>
 </section>
 
-
-
-
-
+<!-- footer -->
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
@@ -82,13 +79,5 @@
         </div>
     </div>
 </footer>
-
-<style>
-
-
-</style>
-  
-
 </body>
-
 </html>
