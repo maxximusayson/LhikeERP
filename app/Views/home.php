@@ -766,66 +766,83 @@ document.addEventListener("DOMContentLoaded", function() {
         </h2><br><br><br><br><br><br><br>
 
         <div class="team-grid">
-            <!-- Team Members -->
-            <div class="team-member fade-up">
-                <img src="images/Valenin/MaychellAlcorin.png" alt="Maychell Alcorin">
-                <h3>Maychell Alcorin</h3>
-                <p>Valenin Founder</p>
-            </div>
+    <!-- Maychell Alcorin (Always First) -->
+    <div class="team-member fade-up">
+        <img src="images/Valenin/MaychellAlcorin.png" alt="Maychell Alcorin">
+        <h3>Maychell Alcorin</h3>
+        <p>Valenin Founder</p>
+        <p class="tagline">"Building dreams, one step at a time."</p>
+    </div>
 
-            <div class="team-member fade-up" style="margin-top: 40px;">
-            <img src="images/Valenin/AinaMae.png" alt="Aina Mae Arroyo">
-            <h3>Aina Mae Arroyo</h3>
-            <p>QA & Frontline Support</p>
-          </div>
+    <!-- Alphabetized Team Members with Taglines -->
+    <div class="team-member fade-up" style="margin-top: 40px;">
+        <img src="images/Valenin/AinaMae.png" alt="Aina Mae Arroyo">
+        <h3>Aina Mae Arroyo</h3>
+        <p>QA & Frontline Support</p>
+        <p class="tagline">"Ensuring quality, delivering excellence."</p>
+    </div>
 
+    <div class="team-member fade-up">
+        <img src="images/Valenin/Vesanie.png" alt="Vesanie Bernal">
+        <h3>Vesanie Bernal</h3>
+        <p>Quality Assurance</p>
+        <p class="tagline">"Precision and perfection in every detail."</p>
+    </div>
 
-            <div class="team-member fade-up">
-                <img src="images/Valenin/JenealleMae.png" alt="Jenealle Mae Jimena">
-                <h3>Jenealle Mae Jimena</h3>
-                <p>Executive Assistant & UI/UX Designer</p>
-            </div>
+    <div class="team-member fade-up">
+        <img src="images/Valenin/KarloEstano.png" alt="Karlo Estano">
+        <h3>Karlo Estano</h3>
+        <p>Web Developer</p>
+        <p class="tagline">"Code today, innovate tomorrow."</p>
+    </div>
 
-            <div class="team-member fade-up">
-                <img src="images/Valenin/Vesanie.png" alt="Jenealle Mae Jimena">
-                <h3>Vesanie Bernal</h3>
-                <p>Quality Assurance</p>
-            </div>
+    <div class="team-member fade-up" style="margin-top: 40px;">
+        <img src="images/Valenin/JenealleMae.png" alt="Jenealle Mae Jimena">
+        <h3>Jenealle Mae Jimena</h3>
+        <p>E.A & UI/UX Designer</p>
+        <p class="tagline">"Designing experiences that inspire."</p>
+    </div>
 
-            <div class="team-member fade-up" style="margin-top: 40px;">
-                <img src="images/Valenin/KarloEstano.png" alt="Maychell Alcorin">
-                <h3>Karlo Estano</h3>
-                <p>Web Developer</p>
-            </div>
+    <div class="team-member fade-up">
+        <img src="images/Valenin/Jose.png" alt="Jose Phernando Lamud">
+        <h3>Jose Phernando Lamud</h3>
+        <p>System Support Analyst</p>
+        <p class="tagline">"Technology should make life easier."</p>
+    </div>
 
-            <div class="team-member fade-up">
-                <img src="images/Valenin/MaychellAlcorin.png" alt="Aina Mae Arroyo">
-                <h3>Aina Mae Arroyo</h3>
-                <p>QA & Frontline Support</p>
-            </div>
+    <div class="team-member fade-up">
+        <img src="images/Valenin/MaryDorothy.png" alt="Mary Dorothy Joy Taala">
+        <h3>Mary Dorothy Joy Taala</h3>
+        <p>Dev Ops</p>
+        <p class="tagline">"Keeping systems running smoothly."</p>
+    </div>
 
-            <div class="team-member fade-up">
-                <img src="images/Valenin/MaychellAlcorin.png" alt="Aina Mae Arroyo">
-                <h3>Aina Mae Arroyo</h3>
-                <p>QA & Frontline Support</p>
-            </div>
+    <div class="team-member fade-up" style="margin-top: 40px;">
+        <img src="images/Valenin/Paolo.png" alt="Paolo Vien Kier Patton">
+        <h3>Paolo Vien Kier Patton</h3>
+        <p>Web Developer</p>
+        <p class="tagline">"Turning ideas into interactive realities."</p>
+    </div>
 
-            <div class="team-member fade-up" style="margin-top: 40px;">
-                <img src="images/Valenin/MaychellAlcorin.png" alt="Jenealle Mae Jimena">
-                <h3>Jenealle Mae Jimena</h3>
-                <p>Executive Assistant & UI/UX Designer</p>
-            </div>
+    <div class="team-member fade-up">
+        <img src="images/Valenin/Jennifer.png" alt="Jennifer Sabado">
+        <h3>Jennifer Sabado</h3>
+        <p>QA & Developer</p>
+        <p class="tagline">"Breaking bugs, building solutions."</p>
+    </div>
+</div>
 
-            <div class="team-member fade-up">
-                <img src="images/Valenin/MaychellAlcorin.png" alt="Maychell Alcorin">
-                <h3>Maychell Alcorin</h3>
-                <p>CEO & Founder</p>
-            </div>
-        </div>
     </div>
 </section>
 
-
+<style>
+.tagline {
+    font-style: italic;
+    font-size: 10px;
+    color: #777;
+    margin-top: 5px;
+}
+</style>
 </section>
 
 <style>
@@ -846,8 +863,9 @@ body {
 }
 
 .team-member {
-    width: 320px;
-    height: 420px;
+    width: 100%; /* Makes it flexible within the grid */
+    max-width: 320px; /* Ensures consistency */
+    height: 420px; /* Keeps the original height */
     text-align: center;
     padding: 20px;
     background: white;
@@ -856,15 +874,18 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    border-radius: 10px; /* Optional: for a smoother look */
+    overflow: hidden; /* Ensures content doesn’t overflow */
 }
 
 /* Ensure images are fully visible */
 .team-member img {
     width: 100%;
+    max-width: 250px; /* Keeps image size under control */
     height: 250px;
-    object-fit: contain; /* Keeps full image visible without cropping */
-    border-radius: 8px;
-    background: #f5f5f5; /* Light background for better visibility */
+    object-fit: cover; /* Ensures images don’t stretch */
+    border-radius: 50%; /* Circular image */
+    border: 5px solid white; /* Optional */
 }
 
 .team-member h3 {
@@ -964,15 +985,15 @@ body {
             <div class="footer-left">
                 <img src="images/logo/ERPlogo.png" alt="LHIKE ERP Logo" class="footer-logo">
                 <p>
-                    <img src="images/logo/pin.svg" alt="Location Icon" class="icon"> 
+                    <img src="images/logo/pin.png" alt="Location Icon" class="icon"> 
                     3rd floor Plazuela de Molino, 9006 Molino Blvd, Bacoor City, Cavite
                 </p>
                 <p>
-                    <img src="images/logo/envelope.svg" alt="Email Icon" class="icon"> 
+                    <img src="images/logo/envelope.png" alt="Email Icon" class="icon"> 
                     example.sample@gmail.com
                 </p>
                 <p>
-                    <img src="images/logo/phone.svg" alt="Phone Icon" class="icon"> 
+                    <img src="images/logo/phone.png" alt="Phone Icon" class="icon"> 
                     +63 000 000 0000
                 </p>
             </div>
