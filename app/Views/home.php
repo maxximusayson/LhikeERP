@@ -27,7 +27,10 @@
                 platform.
             </h2>
         </div>
-        <button id="btnLearnMore">Learn More</button>
+        <button id="btnLearnMore" class="btn btn-outline-light rounded-pill px-4 py-2 shadow-sm">
+    Learn More
+</button>
+
     </div>
 </section>
 
@@ -494,6 +497,28 @@ body {
     background: url('<?= base_url("images/homepage images/banner.png"); ?>') no-repeat center center;
     }
     </style>
+
+<button id="backToTop" title="Go to top">
+    ↑
+</button>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let backToTop = document.getElementById("backToTop");
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY > 300) {
+                backToTop.classList.add("show");
+            } else {
+                backToTop.classList.remove("show");
+            }
+        });
+
+        backToTop.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    });
+</script>
+
 
 </body>
 </html>

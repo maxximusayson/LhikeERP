@@ -11,6 +11,7 @@
 </head>
 <body>
 
+
 <nav class="navbar navbar-expand-lg">
     <div class="container">
         <!-- Navbar Brand / Logo -->
@@ -19,9 +20,13 @@
         </a>
 
         <!-- Navbar Toggler for Mobile -->
-        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+</button>
+
+
+
 
         <!-- Navbar Links -->
         <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
@@ -41,11 +46,32 @@
                 </li>
             </ul>
         </div>
+        <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    const toggler = document.querySelector(".navbar-toggler");
+    const navbarNav = document.querySelector("#navbarNav");
+
+    toggler.addEventListener("click", function () {
+        if (navbarNav.classList.contains("show")) {
+            bootstrap.Collapse.getInstance(navbarNav).hide(); // Force close
+        }
+    });
+
+    // Close when clicking outside the navbar
+    document.addEventListener("click", function (event) {
+        if (!navbarNav.contains(event.target) && !toggler.contains(event.target)) {
+            bootstrap.Collapse.getInstance(navbarNav).hide();
+        }
+    });
+});
+
+
+        </script>
 
         <!-- Contact Button  -->
-<a href="#" class="btn contact-btn d-none d-lg-block" data-bs-toggle="modal" data-bs-target="#contactModal">
-    CONTACT US
-</a>
+        <a href="#" class="btn btn-outline-light rounded-pill px-4 py-2 d-none d-lg-block shadow-sm" data-bs-toggle="modal" data-bs-target="#contactModal">
+            Contact Us
+        </a>
 
 <!-- modal -->
 <div class="modal fade" id="contactModal" data-bs-backdrop="false" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">

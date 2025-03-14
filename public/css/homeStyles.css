@@ -58,28 +58,24 @@
 
 
 
+/* Learn More Button - Same style as Contact Us */
 #btnLearnMore {
-    background: linear-gradient(to bottom, #2693BE, #16608f);
-    color: white;
     font-weight: bold;
+    background: linear-gradient(135deg, #2693BE, #1E3A8A); /* Gradient from light to dark blue */
+    color: white; /* White text for contrast */
     border: none;
-    border-radius: 50px; 
-    padding: 14px 28px; 
-    text-decoration: none;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-    font-size: 1.1rem; 
-    cursor: pointer;
-    margin-top: 25px; 
-    display: inline-block; 
+    padding: 10px 20px;
+    border-radius: 30px; /* Makes it more modern */
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
-
-
 
 #btnLearnMore:hover {
-    background: linear-gradient(to bottom, #16608f, #2693BE);
-    transform: scale(1.08); 
+    background-color: white;
+    color: #1E3A8A;
+    border: 1px solid #1E3A8A;
 }
+
 
 
 #btnLearnMore:active {
@@ -734,4 +730,30 @@ body {
 .footer-logo {
     width: 150px; /* Adjust size as needed */
     margin-bottom: 15px;
+}
+/* Back to Top Button */
+#backToTop {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background-color: #2693BE;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.3s ease-in-out;
+}
+
+#backToTop:hover {
+    background-color: #16608f;
+}
+
+/* Show the button when scrolling down */
+#backToTop.show {
+    display: block;
 }

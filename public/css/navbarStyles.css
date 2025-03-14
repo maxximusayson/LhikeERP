@@ -279,3 +279,32 @@
     height: auto;
     border-radius: 10px; /* Soft rounded corners */
 }
+.header-contact {
+    background-color: #0b2c58; /* Adjust to match your navbar color */
+    padding: 5px 0;
+    font-size: 14px;
+}
+
+.header-contact img {
+    filter: invert(100%) brightness(200%); /* Converts black to white */
+}
+.icon-white {
+    filter: brightness(0) invert(1);
+}
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1); /* Turns it white */
+}
+
+
+/* Optional: Rotate the icon when active */
+.navbar-toggler.active .navbar-toggler-icon {
+    transform: rotate(180deg);
+}
+
+
+
