@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Documentation</title>
+    <title>LhikeERP | <?= esc($pageTitle ?? 'Documentation'); ?></title>
+
     <link rel="stylesheet" href="<?= base_url('/css/documentationStyle.css') ?>">
     <link rel="icon" type="image/png" href="<?= base_url(relativePath: 'images/logo/lhikeerp.png'); ?>">
 </head>
