@@ -498,14 +498,16 @@ body {
     }
     </style>
 
-<button id="backToTop" title="Go to top">
-    ↑
-</button>
+<button id="backToTop" title="Go to top">↑</button>
+
 <script>
     document.addEventListener("DOMContentLoaded", function () {
         let backToTop = document.getElementById("backToTop");
 
         window.addEventListener("scroll", function () {
+            let scrollPercent = (window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100;
+            backToTop.style.background = `conic-gradient(#2693BE ${scrollPercent}%, #ddd ${scrollPercent}%)`;
+
             if (window.scrollY > 300) {
                 backToTop.classList.add("show");
             } else {

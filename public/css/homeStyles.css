@@ -60,20 +60,16 @@
 
 /* Learn More Button - Same style as Contact Us */
 #btnLearnMore {
-    font-weight: bold;
-    background: linear-gradient(135deg, #2693BE, #1E3A8A); /* Gradient from light to dark blue */
-    color: white; /* White text for contrast */
-    border: none;
-    padding: 10px 20px;
-    border-radius: 30px; /* Makes it more modern */
-    transition: 0.3s ease-in-out;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: transparent !important;
+        border: 2px solid rgba(255, 255, 255, 0.5) !important; /* Semi-transparent white border */
+        color: white !important;
+        transition: all 0.3s ease-in-out;
 }
 
 #btnLearnMore:hover {
-    background-color: white;
-    color: #000000;
-    border: 1px solid #ffffff;
+    background-color: rgba(255, 255, 255, 0.2) !important; /* Slightly visible on hover */
+    border-color: white !important;
+    color: white !important;
 }
 
 
@@ -733,20 +729,32 @@ body {
 }
 /* Back to Top Button */
 #backToTop {
-    display: none; /* Hidden by default */
     position: fixed;
     bottom: 20px;
     right: 20px;
     width: 50px;
     height: 50px;
-    background-color: #2693BE;
-    color: white;
-    border: none;
     border-radius: 50%;
-    font-size: 24px;
+    border: none;
+    background: conic-gradient(#2693BE 0% 0%, #ddd 0%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: scale(0.9);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Show Button */
+#backToTop.show {
+    opacity: 1;
+    transform: scale(1);
 }
 
 #backToTop:hover {
