@@ -8,7 +8,7 @@ Backend
 
 CodeIgniter (PHP framework)
 
-MySQL (Database)
+phpMyAdmin (Database)
 
 Frontend
 
