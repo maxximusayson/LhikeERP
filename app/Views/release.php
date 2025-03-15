@@ -16,38 +16,58 @@
     <?= view('navbar'); ?>
 
 
-    <!-- Release Notes Section -->
-    <section class="container-fluid" id="containerfluid1">
-        <div class="container" id="layout1">
-            <h1 class="text-center mb-4" id="titleID">Release Notes</h1>
-            <h4 class="text-center" id="textSub">
-                The latest release of LHIKE ERP introduces major enhancements to Logistics, Human Resources, Inventory, Kanban, and E-commerce modules. This update focuses on streamlining processes, boosting productivity, and delivering real-time insights for better decision-making. It includes new features, bug fixes, and performance improvements for a smoother user experience.
-            </h4>
+   <!-- Release Notes Section -->
+<section class="container-fluid py-5" id="containerfluid1">
+    <div class="container" id="layout1">
+        <h1 class="text-center mb-4 fw-bold" id="titleID">Release Notes</h1>
+        <h4 class="text-center text-muted mb-5" id="textSub">
+            The latest release of LHIKE ERP introduces major enhancements to Logistics, Human Resources, Inventory, Kanban, and E-commerce modules. This update focuses on streamlining processes, boosting productivity, and delivering real-time insights for better decision-making.
+        </h4>
 
-            <div class="row g-4">
-                <?php if (!empty($releaseNotes)): ?>
-                    <?php foreach ($releaseNotes as $note): ?>
-                        <div class="col-md-6 col-lg-4 col-xl-3">
-                            <div class="card shadow-sm">
-                                <div class="card-header" id="header1">
-                                    <img src="<?= base_url('/images/logo/blackLhikeERP.png'); ?>" alt="release note">
-                                </div>
-                                <div class="card-body">
-                                    <h5 class="mb-0"><?= esc($note['releasenote_name']); ?></h5>
-                                    <div class="container-fluid p-0 m-0" id="containerCol2">
-                                        <p class="release-date mb-0"><?= date("F d, Y", strtotime($note['note_release_date'])); ?></p>
-                                        <a href="<?= esc($note['link']); ?>" class="view-btn" target="_blank">View</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    <?php endforeach; ?>
-                <?php else: ?>
-                    <p class="text-center">No release notes available.</p>
-                <?php endif; ?>
+        <div class="row g-4">
+            <?php if (!empty($releaseNotes)): ?>
+                <?php foreach ($releaseNotes as $note): ?>
+
+
+                    <div class="col-md-6 col-lg-4 col-xl-3">
+    <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="background-color: #003559; color: #fff;">
+        <!-- Image Section -->
+        <div class="card-header bg-black text-center p-3 border-0">
+            <img src="<?= base_url('/images/logo/blackLhikeERP.png'); ?>" 
+                alt="release note" 
+                class="img-fluid" 
+                style="max-height: 150px;">
+        </div>
+
+        <!-- Release Notes Content -->
+        <div class="card-body d-flex flex-column p-3" 
+             style="background: linear-gradient(135deg, #005b96, #003559);">
+            <div class="d-flex justify-content-between align-items-center">
+                <div>
+                    <h5 class="fw-bold text-white mb-0"><?= esc($note['releasenote_name']); ?></h5>
+                    <p class="text-light small fst-italic mb-0"><?= date("F d, Y", strtotime($note['note_release_date'])); ?></p>
+                </div>
+                <a href="<?= esc($note['link']); ?>" 
+                   class="btn btn-light btn-sm fw-semibold px-3 rounded-pill shadow-sm" 
+                   target="_blank" 
+                   style="color: #003559;">
+                    View
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</div>
+
+
+
+                <?php endforeach; ?>
+            <?php else: ?>
+                <p class="text-center text-muted">No release notes available.</p>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
+
 
 
     <footer class="footer">
