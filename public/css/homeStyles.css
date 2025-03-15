@@ -765,3 +765,17 @@ body {
 #backToTop.show {
     display: block;
 }
+
+/* social icons */
+.social-icons a {
+    text-decoration: none; /* Removes underline */
+    display: inline-block; /* Ensures proper spacing */
+}
+
+.social-icons img {
+    vertical-align: middle; /* Aligns icons properly */
+}
+.social-icons img {
+    width: 25px; /* Adjust size as needed */
+    height: auto;
+}

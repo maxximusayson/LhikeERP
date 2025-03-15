@@ -48,7 +48,7 @@
 <footer class="footer">
     <div class="container">
         <div class="footer-content">
-            <div class="footer-divider"></div>
+            
 
             <div class="footer-left">
                 <img src="images/logo/ERPlogo.png" alt="LHIKE ERP Logo" class="footer-logo">
@@ -67,7 +67,20 @@
             </div>
 
             <div class="footer-right">
+                <div class="social-section">
+                    <p class="follow-text">Follow Us</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/lhike.erp?mibextid=ZbWKwL" target="_blank">
+                            <img src="images/logo/fb.png" alt="Facebook Icon" class="icon">
+                        </a>
+                        <a href="https://www.youtube.com/@LHIKE-ERP" target="_blank">
+                            <img src="images/logo/yt.png" alt="YouTube Icon" class="icon">
+                        </a>
+                    </div>
+                </div>
+                <br>
                 <img src="images/logo/valenin.png" alt="VALENIN Logo" class="footer-logo">
+
                 <form class="subscribe-form">
                     <div class="input-group">
                         <input type="email" placeholder="ENTER YOUR EMAIL" required>
@@ -83,7 +96,6 @@
         </div>
     </div>
 </footer>
-
 
 
 
