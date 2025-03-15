@@ -336,7 +336,43 @@
     padding: 40px 0;
     color: white;
     text-align: center;
+    padding-top: 30px; /* Ensure footer content has spacing */
 }
+.footer-content::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#container1 {
+  flex-grow: 1;
+}
+
+#container1 {
+  min-height: calc(100vh - 200px); /* Adjust based on your layout */
+}
+#container1 {
+  padding-top: 0; /* Remove extra padding */
+  margin-top: -20px; /* Adjust negative margin if needed */
+  margin-bottom: 100px; /* Push section away from the footer */
+}
+h1.my-4 {
+  margin-top: 0;
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+
+
+
+#main1 {
+  margin-bottom: 50px; /* Adjust if needed */
+}
+
 
 .footer .container {
     max-width: 1200px;

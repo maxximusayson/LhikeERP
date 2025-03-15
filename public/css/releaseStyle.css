@@ -250,31 +250,5 @@
   .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   }
-  #containerfluid1 {
-    background: #f8f9fa; /* Light gray background */
-}
-
-.card {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    border-radius: 12px;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.btn-outline-primary {
-    border-radius: 50px;
-    padding: 10px;
-    transition: all 0.3s;
-}
-
-.btn-outline-primary:hover {
-    background: #0d6efd;
-    color: white;
-}
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
-
 
   

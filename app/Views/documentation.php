@@ -12,7 +12,9 @@
 
 <body>
     <?= view('navbar'); ?>
-    <section class="container-fluid p-0" id="container1">
+
+
+<section class="container-fluid py-5" id="container1">
     <div class="container-lg p-0" id="main1">
         <h1 class="my-4">Documentation</h1>
         <div class="container-fluid p-0 m-0" id="divWrapper">
@@ -42,44 +44,6 @@
     </div>
 </section>
 
-<!-- footer -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <div class="footer-divider"></div>
 
-            <div class="footer-left">
-                <img src="images/logo/ERPlogo.png" alt="LHIKE ERP Logo" class="footer-logo">
-                <p>
-                    <img src="images/logo/pin.png" alt="Location Icon" class="icon"> 
-                    3rd floor Plazuela de Molino, 9006 Molino Blvd, Bacoor City, Cavite
-                </p>
-                <p>
-                    <img src="images/logo/envelope.png" alt="Email Icon" class="icon"> 
-                    example.sample@gmail.com
-                </p>
-                <p>
-                    <img src="images/logo/phone.png" alt="Phone Icon" class="icon"> 
-                    +63 000 000 0000
-                </p>
-            </div>
-
-            <div class="footer-right">
-                <img src="images/logo/valenin.png" alt="VALENIN Logo" class="footer-logo">
-                <form class="subscribe-form">
-                    <div class="input-group">
-                        <input type="email" placeholder="ENTER YOUR EMAIL" required>
-                        <button type="submit">SUBMIT</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-
-        <div class="footer-divider"></div>
-        <div class="footer-bottom">
-            © 2025 LHIKE ERP. All rights reserved.
-        </div>
-    </div>
-</footer>
 </body>
 </html>
