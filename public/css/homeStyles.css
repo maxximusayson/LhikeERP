@@ -292,7 +292,7 @@
     font-weight: 300;
     margin-top: 6px;
     color: #ffffff;
-    text-align: center; /* Center text for better responsiveness */
+    text-align: justify; /* Center text for better responsiveness */
 }
 
 /* Image Container */
@@ -380,7 +380,7 @@
     }
 
     .text-section {
-        text-align: center; /* Aligns text in center on mobile */
+        text-align: justify; /* Aligns text in center on mobile */
         padding-left: 0;
     }
 }
@@ -506,7 +506,7 @@ body {
     }
 
     .section-title {
-        text-align: center; /* Center-align the title on small screens */
+        text-align: justify; /* Center-align the title on small screens */
     }
 }
 /* General Footer Styles */
