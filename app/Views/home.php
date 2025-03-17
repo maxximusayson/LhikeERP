@@ -277,7 +277,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <!-- Right Text Content -->
                 <div class="col-md-6 text-section d-flex justify-content-center align-items-center fade-up">
                     <div class="section-box text-end">
-                        <h2 class="section-title">Our <span class="highlight-text">Mission</span></h2>
+                        <h2 class="section-title" id="missionTitle">Our <span class="highlight-text">Mission</span></h2>
 
                         <p class="section-text">
                         Our mission is to empower businesses through innovative and reliable IT solutions.

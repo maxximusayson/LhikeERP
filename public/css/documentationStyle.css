@@ -121,7 +121,7 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
     margin-bottom: 2rem;
-    
+   
 }
 
 
@@ -133,6 +133,7 @@
 
 
 
+/* Module Card Styling */
 /* Module Card Styling */
 .module-card {
   display: flex;
@@ -205,73 +206,54 @@
   transition: background-color 0.3s ease;
 }
 
+
+
 .btn-view:hover {
-  background-color:#021725;
+  background-color: #051825;
+
 }
 
 /* Responsive adjustments */
 @media (max-width: 992px) {
-  .module-grid {
+  #divWrapper {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 576px) {
-  .module-grid {
+  #divWrapper {
     grid-template-columns: 1fr;
   }
 }
 
 
 
-#linkButton{
-    border: none;
-    background-color: #2693BE;
-    color: var(--color-white);
-    padding: 10px 20px;
-    border-radius: 10px;
-    width: 120px;
-    margin-right: 25px;
-    border-radius: 20px;
-    text-decoration: none;
-    text-align: center;
-}
-
-#linkButton:hover{
-  background-color: #003559;
-  color: var(--color-white);
-  transition: 0.5s;
-}
-  /* General Footer Styles */
 
 
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+
+/* General Footer Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
+
 #container1 {
   flex-grow: 1;
+  min-height: calc(100vh - 200px);
+  padding-top: 0;
+  margin-top: -20px;
+  margin-bottom: 100px;
 }
 
-#container1 {
-  min-height: calc(100vh - 200px); /* Adjust based on your layout */
-}
-#container1 {
-  padding-top: 0; /* Remove extra padding */
-  margin-top: -20px; /* Adjust negative margin if needed */
-  margin-bottom: 100px; /* Push section away from the footer */
-}
 h1.my-4 {
   margin-top: 0;
-  margin-bottom: 20px; /* Adjust as needed */
+  margin-bottom: 20px;
 }
+
 #main1 {
-  margin-bottom: 50px; /* Adjust if needed */
+  margin-bottom: 50px;
 }
-
-
-
 
 .footer-content {
   display: flex;
