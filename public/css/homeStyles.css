@@ -368,11 +368,17 @@
     .section-title {
         font-size: 35px;
         text-align: center; /* Ensures centering on mobile */
+        
+    }
+
+    #missionTitle{
+        margin-top: 70px;
     }
 
     .section-title .highlight-text {
         font-size: 35px;
         padding: 4px 8px; /* Reduce padding */
+    
     }
 
     .section-text {
@@ -388,8 +394,10 @@
 @media (max-width: 480px) {
     .section-title {
         font-size: 28px; /* Adjust font size for small screens */
+        
     }
 
+ 
     .section-title .highlight-text {
         font-size: 28px;
     }
