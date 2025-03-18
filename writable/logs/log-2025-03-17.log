@@ -1,0 +1,115 @@
+CRITICAL - 2025-03-17 15:22:27 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "welcome_message.php"
+[Method: GET, Route: /]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('welcome_message.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('welcome_message', [], true)
+ 3 APPPATH\Controllers\Home.php(9): view('welcome_message')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Maxximus Ayson\\OneDrive\\Desktop\\LhikeERP\\public\\index.php')
+ERROR - 2025-03-17 15:26:32 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lhike', 3306, '', 0)
+#1 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\app\Controllers\DocumentationController.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DocumentationController->index()
+#8 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentationController))
+#9 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\Maxxim...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\app\Controllers\DocumentationController.php(14): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DocumentationController->index()
+#7 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentationController))
+#8 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\Maxxim...')
+#13 {main}
+CRITICAL - 2025-03-17 15:26:32 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: documentation]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `modules`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DocumentationController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocumentationController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentationController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Maxximus Ayson\\OneDrive\\Desktop\\LhikeERP\\public\\index.php')
+ERROR - 2025-03-17 16:05:44 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:201
+Stack trace:
+#0 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php(201): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'lhike', 3306, '', 0)
+#1 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\app\Controllers\DocumentationController.php(14): CodeIgniter\BaseModel->findAll()
+#7 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DocumentationController->index()
+#8 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentationController))
+#9 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#11 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#12 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#13 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\Maxxim...')
+#14 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\MySQLi\Connection.php:246
+Stack trace:
+#0 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#5 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\app\Controllers\DocumentationController.php(14): CodeIgniter\BaseModel->findAll()
+#6 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(933): App\Controllers\DocumentationController->index()
+#7 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentationController))
+#8 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#10 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 C:\Users\Maxximus Ayson\OneDrive\Desktop\LhikeERP\vendor\codeigniter4\framework\system\rewrite.php(44): require_once('C:\\Users\\Maxxim...')
+#13 {main}
+CRITICAL - 2025-03-17 16:05:44 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: documentation]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(620): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `modules`', [], false)
+ 3 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\DocumentationController.php(14): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\DocumentationController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\DocumentationController))
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Maxximus Ayson\\OneDrive\\Desktop\\LhikeERP\\public\\index.php')

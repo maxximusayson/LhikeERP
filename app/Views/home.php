@@ -203,9 +203,9 @@
                 </div>
 
                 <!-- Right Text Content -->
-                 <br><br>
+          
                 <div class="col-md-6 text-section">
-                  <br><br><br><br>
+                  <br><br>
                     <!-- What We Believe In (Right-Aligned) -->
                     <div class="section-box text-end fade-up" style="margin-bottom: 110px;">
                     <h2 class="section-title bordered-title">What we <span class="highlight-text">believe</span></h2>
@@ -301,7 +301,7 @@ document.addEventListener("DOMContentLoaded", function() {
   style="background: linear-gradient(to bottom, #002744, #004A7C); padding: 110px 0;">
   
     <section class="custom-section">
-        <div class="container">
+        <div class="container"><br><br><br>
             <div class="row align-items-center">
                 <!-- Left Text Content (now first) -->
                 <div class="col-md-6 text-section d-flex justify-content-center align-items-center fade-up">
@@ -323,7 +323,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     </div>
                 </div>
             </div>
-        </div>
+        </div><br><br>
     </section>
 </section>
 
@@ -337,7 +337,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <div class="container">
         <h2 class="section-title text-center fade-up">
             We believe that <span class="highlight-text">people</span> are everything
-        </h2><br><br><br><br><br><br><br>
+        </h2><br><br><br><br><br><br><br><br><br><br>
 
         <div class="team-grid">
     <!-- Maychell Alcorin (Always First) -->

@@ -292,7 +292,7 @@
     font-weight: 300;
     margin-top: 6px;
     color: #ffffff;
-    text-align: center; /* Center text for better responsiveness */
+    text-align: justify; /* Center text for better responsiveness */
 }
 
 /* Image Container */
@@ -386,7 +386,7 @@
     }
 
     .text-section {
-        text-align: center; /* Aligns text in center on mobile */
+        text-align: justify; /* Aligns text in center on mobile */
         padding-left: 0;
     }
 }
@@ -431,27 +431,27 @@ body {
 }
 
 .team-member {
-    width: 100%; /* Makes it flexible within the grid */
-    max-width: 320px; /* Ensures consistency */
-    height: 420px; /* Keeps the original height */
+    width: 100%; 
+    max-width: 320px; 
+    height: 420px; 
     text-align: center;
     padding: 20px;
-    background: white;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    overflow: hidden; /* Ensures content doesn’t overflow */
+    overflow: hidden; 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0);
 }
 
-/* Ensure images are fully visible */
+
 .team-member img {
     width: 100%;
-    max-width: 250px; /* Keeps image size under control */
+    max-width: 250px; 
     height: 250px;
-    object-fit: cover; /* Ensures images don’t stretch */
-    border-radius: 50%; /* Circular image */
+    object-fit: cover; 
+    border-radius: 50%; 
 }
 
 .team-member h3 {
@@ -464,7 +464,7 @@ body {
 
 .team-member p {
     color: #003559;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     margin-top: 5px;
     font-family: 'Montserrat', sans-serif;
@@ -514,7 +514,7 @@ body {
     }
 
     .section-title {
-        text-align: center; /* Center-align the title on small screens */
+        text-align: justify; /* Center-align the title on small screens */
     }
 }
 /* General Footer Styles */
@@ -744,7 +744,7 @@ body {
     height: 50px;
     border-radius: 50%;
     border: none;
-    background: conic-gradient(#2693BE 0% 0%, #ddd 0%);
+    background: conic-gradient(#2693BE 0% 0%, #555438 0%);
     color: white;
     font-size: 20px;
     font-weight: bold;
