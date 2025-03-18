@@ -14,7 +14,7 @@
 # ENVIRONMENT
 #--------------------------------------------------------------------
 
-# CI_ENVIRONMENT = production
+CI_ENVIRONMENT = development
 
 #--------------------------------------------------------------------
 # APP
@@ -51,6 +51,20 @@ database.default.DBDebug = true
 # database.tests.charset = utf8mb4
 # database.tests.DBCollat = utf8mb4_general_ci
 # database.tests.port = 3306
+
+
+#--------------------------------------------------------------------
+# EMAIL CONFIGURATION (SMTP)
+#--------------------------------------------------------------------
+EMAIL_PROTOCOL = smtp
+EMAIL_SMTP_HOST = smtp.gmail.com
+EMAIL_SMTP_USER = jeneallevalenin@gmail.com
+EMAIL_SMTP_PASS = otyobcpgzlkyjzam # Use a Gmail App Password
+EMAIL_SMTP_PORT = 587
+EMAIL_SMTP_CRYPTO = tls
+EMAIL_FROM_EMAIL = jeneallevalenin@gmail.com
+EMAIL_FROM_NAME = Jeneal Levalenin
+EMAIL_MAIL_TYPE = html
 
 #--------------------------------------------------------------------
 # ENCRYPTION
