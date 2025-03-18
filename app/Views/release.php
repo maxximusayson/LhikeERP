@@ -32,32 +32,33 @@
 
 
                                         <div class="col-md-6 col-lg-4 col-xl-3">
-                        <div class="card border-0 shadow-lg rounded-4 overflow-hidden" style="background-color: #003559; color: #fff;">
-                            <!-- Image Section -->
-                            <div class="card-header bg-black text-center p-3 border-0">
-                                <img src="<?= base_url('/images/logo/blackLhikeERP.png'); ?>" 
-                                    alt="release note" 
-                                    class="img-fluid" 
-                                    style="max-height: 150px;">
-                            </div>
+                                        <div class="card border-0 shadow-lg overflow-hidden" style="background-color: #003559; color: #fff; border-radius: 0;">
+    <!-- Image Section -->
+    <div class="card-header bg-black text-center p-3 border-0" style="border-radius: 0;">
+        <img src="<?= base_url('/images/logo/blackLhikeERP.png'); ?>" 
+            alt="release note" 
+            class="img-fluid" 
+            style="max-height: 150px;">
+    </div>
 
-                            <!-- Release Notes Content -->
-                            <div class="card-body d-flex flex-column p-3" 
-                                style="background: linear-gradient(135deg, #005b96, #003559);">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div>
-                                        <h5 class="fw-bold text-white mb-0"><?= esc($note['releasenote_name']); ?></h5>
-                                        <p class="text-light small fst-italic mb-0"><?= date("F d, Y", strtotime($note['note_release_date'])); ?></p>
-                                    </div>
-                                    <a href="<?= esc($note['link']); ?>" 
-                                    class="btn btn-light btn-sm fw-semibold px-3 rounded-pill shadow-sm" 
-                                    target="_blank" 
-                                    style="color: #003559;">
-                                        View
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Release Notes Content -->
+    <div class="card-body d-flex flex-column p-3" 
+        style="background: linear-gradient(135deg, #005b96, #003559); border-radius: 0;">
+        <div class="d-flex justify-content-between align-items-center">
+            <div>
+                <h5 class="fw-bold text-white mb-0"><?= esc($note['releasenote_name']); ?></h5>
+                <p class="text-light small fst-italic mb-0"><?= date("F d, Y", strtotime($note['note_release_date'])); ?></p>
+            </div>
+            <a href="<?= esc($note['link']); ?>" 
+            class="btn btn-light btn-sm fw-semibold px-3 rounded-pill shadow-sm" 
+            target="_blank" 
+            style="color: #003559;">
+                View
+            </a>
+        </div>
+    </div>
+</div>
+
                     </div>
                 <?php endforeach; ?>
             <?php else: ?>
