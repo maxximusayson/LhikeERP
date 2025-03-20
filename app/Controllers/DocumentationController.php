@@ -34,20 +34,20 @@ class DocumentationController extends Controller
     }
 
     public function selectModule()
-{
-    $session = session();
-    if ($this->request->getMethod() === 'POST') { // now checking uppercase
-        $module_id = $this->request->getPost('module_id');
-        $module_name = $this->request->getPost('modulename');
+    {
+        $session = session();
+        if ($this->request->getMethod() === 'POST') { // now checking uppercase
+            $module_id = $this->request->getPost('module_id');
+            $module_name = $this->request->getPost('modulename');
 
-        $session->set('selected_module', [
-            'id'   => $module_id,
-            'name' => $module_name
-        ]);
+            $session->set('selected_module', [
+                'id'   => $module_id,
+                'name' => $module_name
+            ]);
 
-        return redirect()->to('/documentation/view/' . urlencode($module_name));
+            return redirect()->to('/documentation/view/' . urlencode($module_name));
+        }
+
+        return redirect()->to('/documentation');
     }
-
-    return redirect()->to('/documentation');
-}
 }

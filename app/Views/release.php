@@ -106,9 +106,10 @@
                 <br>
                 <img src="images/logo/valenin.png" alt="VALENIN Logo" class="footer-logo">
 
-                <form class="subscribe-form">
+                <form action="<?= base_url('contact/sendEmail2') ?>" method="post" class="subscribe-form">
+
                     <div class="input-group">
-                        <input type="email" placeholder="ENTER YOUR EMAIL" required>
+                        <input type="email" name="email" placeholder="ENTER YOUR EMAIL" required>
                         <button type="submit">SUBMIT</button>
                     </div>
                 </form>
