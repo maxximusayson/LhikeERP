@@ -154,5 +154,126 @@
 }
 
 
+/** modal */
+/* Center the modal vertically */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
 
+/* Customize the modal content */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
 
+/* Modal header styles */
+/* Center the modal vertically */
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Customize the modal content */
+.modal-content {
+  border-radius: 12px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  background: #ffffff;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Modal header styles */
+.modal-header {
+  background: linear-gradient(90deg, rgba(0,53,89,1) 25%, rgba(0,114,191,1) 100%);
+
+  color: white;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* Close button */
+.btn-close {
+  background-color: white;
+  opacity: 0.8;
+}
+
+.btn-close:hover {
+  opacity: 1;
+}
+
+/* Modal body styles */
+.modal-body {
+  font-size: 16px;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Input field styles */
+#accessCodeInput {
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: center;
+}
+
+/* Error message */
+#error-message {
+  color: #dc3545;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  display: none;
+  padding: 8px;
+  background: #f8d7da;
+  border-radius: 6px;
+  border: 1px solid #dc3545;
+}
+
+/* Modal footer */
+.modal-footer {
+  justify-content: space-between;
+  padding: 15px;
+}
+
+/* Button styles */
+.btn-primary {
+  background-color: #2693BE;
+  border-radius: 8px;
+  font-weight: bold;
+  transition:  0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  border-radius: 8px;
+  background-color: #6c757d;
+  transition: 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .modal-content {
+      padding: 10px;
+  }
+}

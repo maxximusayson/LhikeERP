@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= esc($module['modulename']); ?> Module</title>
     <link rel="stylesheet" href="<?= base_url('/css/SelectedModuleStyle.css') ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -33,7 +34,7 @@
                                 <input type="hidden" name="module_id" value="<?= esc($module['module_id']); ?>">
                                 <input type="hidden" name="modulename" value="<?= esc($module['modulename']); ?>">
                                 <input type="hidden" name="description" value="<?= esc($module['description']); ?>">
-                                <a href="<?= esc($version['link']); ?>" id="linkButton" target="_blank">View</a>
+                                <button class="btn btn-primary openModal" id="linkButton" data-link="<?= esc($version['link']); ?>">View</button>
                             </div>
                         </div>
                     <?php endforeach; ?>
@@ -44,6 +45,59 @@
         </div>
     </section>
 
-</body>
+    <!-- Modal -->
+    <div class="modal fade" id="accessCodeModal" tabindex="-1" aria-labelledby="accessCodeModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="accessCodeModalLabel">Enter Access Code</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Please enter the access code to view this module.</p>
+                    <input type="password" id="accessCodeInput" class="form-control" placeholder="Enter Access Code">
+                    <div class="text-danger mt-2" id="error-message" style="display: none;">Invalid access code.</div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" id="verifyCodeBtn">Verify</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let currentLink = "";
+            const accessCodes = {
+                "valenin": "1002",
+                "hirayapay": "2000"
+            };
+
+            document.querySelectorAll(".openModal").forEach(button => {
+                button.addEventListener("click", function () {
+                    currentLink = this.getAttribute("data-link");
+                    document.getElementById("accessCodeInput").value = ""; 
+                    document.getElementById("error-message").style.display = "none";
+                    new bootstrap.Modal(document.getElementById("accessCodeModal")).show();
+                });
+            });
+
+            document.getElementById("verifyCodeBtn").addEventListener("click", function () {
+                let enteredCode = document.getElementById("accessCodeInput").value;
+                
+                if (Object.values(accessCodes).includes(enteredCode)) {
+                    window.open(currentLink, "_blank");
+                    bootstrap.Modal.getInstance(document.getElementById("accessCodeModal")).hide();
+                } else {
+                    document.getElementById("error-message").style.display = "block";
+                     // Hide error message after 5 seconds
+
+                }
+            });
+        });
+    </script>
+
+</body>
 </html>

@@ -30,3 +30,7 @@ $routes->get('documentation/view/(:any)', 'DocumentationController::viewModule/$
 //navbar contact us form 
 $routes->post('contact/sendEmail', 'Contact::sendEmail');
 
+$routes->post('contact/sendEmail2', 'Contact::sendEmail2');
+
+
+
