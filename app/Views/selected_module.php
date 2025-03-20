@@ -127,16 +127,23 @@
 
         document.getElementById("verifyCodeBtn").addEventListener("click", function () {
             let enteredCode = document.getElementById("accessCodeInput").value;
-            
+            let errorMessage = document.getElementById("error-message");
+
             if (Object.values(accessCodes).includes(enteredCode)) {
                 window.open(currentLink, "_blank");
                 bootstrap.Modal.getInstance(document.getElementById("accessCodeModal")).hide();
             } else {
-                document.getElementById("error-message").style.display = "block";
+                errorMessage.style.display = "block";
+
+                // Hide error message after 5 seconds
+                setTimeout(() => {
+                    errorMessage.style.display = "none";
+                }, 5000);
             }
         });
     });
 </script>
+
 
 
 </body>
