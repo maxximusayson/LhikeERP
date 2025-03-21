@@ -11,6 +11,9 @@
     height: 40px; 
 }
 
+.navbar-nav {
+    gap: 40px; /* Adds spacing between navbar items */
+}
 
 .nav-link {
     position: relative;
@@ -35,19 +38,23 @@
 }
 
 /* Active and hover effects */
-.nav-link.active,
 .nav-link:hover {
-    color: white !important;
+    color: #2693BE !important; /* Yellow highlight on hover */
 }
 
-.nav-link.active::after,
 .nav-link:hover::after {
     width: 100%;
+    background-color: #2693BE;
 }
 
+/* ✅ Fix for Active State */
+.nav-link.active {
+    color: #2693BE !important; /* Active link color */
+}
 
-.navbar-nav {
-    gap: 40px; 
+.nav-link.active::after {
+    width: 100%;
+    background-color: #2693BE;
 }
 
 /* Contact Button */

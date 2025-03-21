@@ -34,14 +34,13 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link <?= (uri_string() == '') ? 'active' : '' ?>" href="<?= base_url('/home') ?>">HOME</a>
+                        <a class="nav-link <?= (uri_string() == 'home' || uri_string() == '') ? 'active' : '' ?>" href="<?= base_url('/home') ?>">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#who-are-we-section">ABOUT</a>
+                        <a class="nav-link <?= (uri_string() == '' || uri_string() == '') ? 'active' : '' ?>" href="<?= base_url('/home#who-are-we-section') ?>">ABOUT</a>
                     </li>
-
                     <li class="nav-item">
-                        <a class="nav-link <?= (uri_string() == '') ? '' : '' ?>" href="<?= base_url('documentation') ?>">DOCUMENTATION</a>
+                        <a class="nav-link <?= (uri_string() == 'documentation') ? 'active' : '' ?>" href="<?= base_url('documentation') ?>">DOCUMENTATION</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link <?= (uri_string() == 'release') ? 'active' : '' ?>" href="<?= base_url('release') ?>">RELEASE</a>
