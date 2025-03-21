@@ -37,8 +37,8 @@
                         <a class="nav-link <?= (uri_string() == 'home' || uri_string() == '') ? 'active' : '' ?>" href="<?= base_url('/home') ?>">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link <?= (uri_string() == '' || uri_string() == '') ? 'active' : '' ?>" href="<?= base_url('/home#who-are-we-section') ?>">ABOUT</a>
-                    </li>
+            <a id="about-link" class="nav-link" href="<?= base_url('/home#who-are-we-section') ?>">ABOUT</a>
+        </li>
                     <li class="nav-item">
                         <a class="nav-link <?= (uri_string() == 'documentation') ? 'active' : '' ?>" href="<?= base_url('documentation') ?>">DOCUMENTATION</a>
                     </li>
@@ -48,6 +48,39 @@
                 </ul>
             </div>
             <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    const navLinks = document.querySelectorAll(".nav-link");
+                    const aboutLink = document.getElementById("about-link");
+                    const homeLink = document.querySelector(".nav-link[href*='/home']");
+                    const aboutSection = document.getElementById("who-are-we-section");
+
+                    // Click event to highlight the clicked link
+                    navLinks.forEach(link => {
+                        link.addEventListener("click", function () {
+                            navLinks.forEach(l => l.classList.remove("active"));
+                            this.classList.add("active");
+                        });
+                    });
+
+                    // Scroll event to switch active link
+                    if (aboutSection) {
+                        const observer = new IntersectionObserver(
+                            (entries) => {
+                                if (entries[0].isIntersecting) {
+                                    aboutLink.classList.add("active");
+                                    homeLink.classList.remove("active");
+                                } else {
+                                    aboutLink.classList.remove("active");
+                                    homeLink.classList.add("active");
+                                }
+                            },
+                            { threshold: 0.3 } 
+                        );
+
+                        observer.observe(aboutSection);
+                    }
+                });
+
                 document.addEventListener("DOMContentLoaded", function() {
                     const toggler = document.querySelector(".navbar-toggler");
                     const navbarNav = document.querySelector("#navbarNav");
