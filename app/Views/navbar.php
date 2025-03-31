@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('/css/navbarStyles.css') ?>">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
 
 <body>
@@ -105,69 +107,65 @@
                 Contact Us
             </a>
 
-            <!-- modal -->
-            <div class="modal fade" id="contactModal" data-bs-backdrop="false" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                    <div class="modal-content custom-modal">
-                        <!-- Close Button (Icon) -->
-                        <button type="button" class="close-icon" data-bs-dismiss="modal" aria-label="Close">
-                            ✖
-                        </button>
+          <!-- Modal -->
+<div class="modal fade" id="contactModal" data-bs-backdrop="false" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+        <div class="modal-content custom-modal">
+            <!-- Close Button (Icon) -->
+            <button type="button" class="close-icon" data-bs-dismiss="modal" aria-label="Close">✖</button>
 
-                        <div class="modal-body d-flex p-0">
-                            <!-- Left Side  -->
-                            <div class="modal-left">
-                                <!-- Dark Overlay for Better Visibility -->
-                                <div class="overlay"></div>
+            <div class="modal-body d-flex p-0">
+                <!-- Left Side -->
+                <div class="modal-left">
+                    <!-- Logo -->
+                    
+                    
 
-                                <!-- Logo -->
-                                <div class="logo-container">
-                                    <img src="images/logo.png" alt="Company Logo" class="modal-logo">
-                                </div>
+                                  <!-- Contact Details (Phone & Location) -->
+                                  <div class="contact-details">
+    <!-- Logo section (centered) -->
+    <div class="contact-item logo-container">
+        <img src="path/to/logo.png" alt="Company Logo" class="logo">
+    </div>
 
-                                <h2>Let's get in touch</h2>
-                                <p>We're open for any suggestions or just to have a chat</p>
+    <!-- Phone number section -->
+    <div class="contact-item">
+        <i class="fas fa-phone-alt icon-white"></i> <!-- Phone Icon -->
+        <span>+63 123 456 8910</span>
+    </div>
 
-                                <!-- Contact Details (Phone & Location) -->
-                                <div class="contact-details">
-                                    <div class="contact-item">
-                                        <img src="images/icons/phone.png" alt="Phone Icon" class="icon">
-                                        <span>+63 123 456 8910</span>
-                                    </div>
-                                    <div class="contact-item">
-                                        <img src="images/icons/location.png" alt="Location Icon" class="icon">
-                                        <span>3rd floor Plazuela de Molino, 9006 Molino Blvd, Bacoor City, Cavite</span>
-                                    </div>
-                                </div>
-
-                                <!-- Contact Image -->
-                                <img src="images/homepage images/Process Automations.jpg" alt="Contact Icons" class="contact-image">
-                            </div>
+    <!-- Location section -->
+    <div class="contact-item">
+        <i class="fas fa-map-marker-alt icon-white"></i> <!-- Location Icon -->
+        <span>3rd floor Plazuela de Molino, 9006 Molino Blvd, Bacoor City, Cavite</span>
+    </div>
+</div>
 
 
-                            <!-- Right Side -->
-                            <div class="modal-right">
-                                <div class="logo-container">
-                                    <img src="images/logo/ERPlogo.png" alt="Company Logo" class="modal-logo">
-                                </div>
-                                <h3>Contact Us</h3>
-                                <form action="<?= base_url('contact/sendEmail') ?>" method="post">
-                                    <div class="mb-3">
-                                        <input type="text" name="name" class="form-control custom-input" placeholder="FULL NAME" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <input type="email" name="email" class="form-control custom-input" placeholder="EMAIL" required>
-                                    </div>
-                                    <div class="mb-3">
-                                        <textarea name="message" class="form-control custom-input" placeholder="MESSAGE" rows="3" required></textarea>
-                                    </div>
-                                    <button type="submit" class="btn custom-btn">SEND MESSAGE →</button>
-                                </form>
-                            </div>
+
+                </div>
+
+                <!-- Right Side -->
+                <div class="modal-right">
+                    <h3>Contact Us</h3>
+                    <form action="<?= base_url('contact/sendEmail') ?>" method="post">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control custom-input" placeholder="FULL NAME" required>
                         </div>
-                    </div>
+                        <div class="mb-3">
+                            <input type="email" name="email" class="form-control custom-input" placeholder="EMAIL" required>
+                        </div>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control custom-input" placeholder="MESSAGE" rows="3" required></textarea>
+                        </div>
+                        <button type="submit" class="btn custom-btn">SEND MESSAGE →</button>
+                    </form>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+
 
 
 

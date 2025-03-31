@@ -125,32 +125,56 @@
     width: 150px;
     height: auto;
     margin-bottom: 20px;
-    filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.3));
+    filter: drop-shadow(2px 4px 6px rgba(255, 255, 255, 0.813));
 }
 
-/* Contact Details Styling */
 .contact-details {
-    margin: 20px 0;
+    padding: 20px;
+    background-color: #f9f9f92c; /* Light background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
 }
 
+
+
+
+
+
+/* Contact Item Styling */
 .contact-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 15px; /* Space between items */
 }
 
-.icon {
-    width: 24px;
-    height: auto;
-    margin-right: 10px;
+/* Heading styling */
+
+
+/* Icon Styling */
+.contact-item i {
+    color: white; /* White icons */
+    margin-right: 10px; /* Space between icon and text */
 }
 
+/* Text Styling */
 .contact-item span {
-    color: white; 
-    font-size: 10px;
-    font-weight: bold;
+    font-size: 1.2rem; /* Increased font size for readability */
+    color: #ffffff; /* Dark text color */
+    font-weight: 600; /* Slightly bold text */
 }
+
+.icon-white {
+    filter: brightness(0) invert(1); /* Ensures icon is white */
+}
+
+.contact-item i {
+    transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.contact-item i:hover {
+    transform: scale(1.2); /* Hover effect for icons */
+}
+
 
 
 
