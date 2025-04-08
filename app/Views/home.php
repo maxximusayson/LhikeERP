@@ -6,11 +6,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>LhikeERP | <?= esc($pageTitle ?? 'Home'); ?></title>
+    <title><?= esc($pageTitle ?? 'LhikeERP') ?></title>
 
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('images/logo/lhikeerp.png') ?>">
+    <link rel="shortcut icon" href="<?= base_url('images/logo/lhikeerp.png') ?>">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="<?= base_url('css/homeStyles.css') ?>">
-    <link rel="icon" type="image/png" href="<?= base_url('images/logo/lhikeerp.png'); ?>">
 </head>
+
 
 <body>
 

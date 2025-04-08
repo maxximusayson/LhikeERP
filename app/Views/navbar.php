@@ -4,16 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LhikeERP</title>
+
+    <!-- Dynamic Page Title -->
+    <title><?= esc($pageTitle ?? 'LhikeERP') ?></title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="<?= base_url('images/logo/lhikeerp.png') ?>">
+    <link rel="shortcut icon" href="<?= base_url('images/logo/lhikeerp.png') ?>">
+
+    <!-- Fonts & CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="<?= base_url('/css/navbarStyles.css') ?>">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
+
 
 
     <nav class="navbar navbar-expand-lg">
