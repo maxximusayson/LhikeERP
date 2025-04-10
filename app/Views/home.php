@@ -217,7 +217,7 @@
                     </div>
 
                     <!-- Who Are We (Left-Aligned with White Box) -->
-                    <div class="section-box white-box text-start fade-up" style="padding: 30px;">
+                    <div class="section-box white-box text-start fade-up p-0" style="padding: 30px;">
                         <h2 class="section-title">
                         <h2 class="section-title bordered-title"><span class="highlight-text">Who</span> are we?</h2>
 

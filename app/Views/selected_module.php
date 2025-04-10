@@ -102,8 +102,18 @@
     document.addEventListener("DOMContentLoaded", function () {
         let currentLink = "";
         const accessCodes = {
-            "valenin": "1002",
-            "hirayapay": "2000"
+            "valenin": "2000",
+            "hirayapay": "2001",
+            "lhikeerp": "2002",
+            "aiTools": "2003",
+            "agriGoPro": "2004",
+            "manulink": "2005",
+            "aptly": "2006",
+            "innerU":"2007",
+            "momentum":"2008",
+            "datalysis": "2009",
+            "confiSmile": "2010",
+            "SMMVoice": "2011",
         };
 
         document.querySelectorAll(".openModal").forEach(button => {
